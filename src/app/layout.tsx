@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Textbook HTML CSS",
-  description: "Textbook HTML CSS",
+  title: "Онлайн навчальник",
+  description: "Навчальні матеріали з Git, HTML, CSS та веброзробки",
 };
 
 export default function RootLayout({
@@ -25,10 +25,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="uk">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
-        <main>{children}</main>
+
+        <main className="container">{children}</main>
+
         <Footer />
       </body>
     </html>

@@ -13,6 +13,11 @@
   --color-text: #1e293b;
   --color-text-light: #64748b;
 
+  --color-note: #2563eb;
+  --color-hint: #f97316;
+  --color-answer: #22c55e;
+  --color-task: #2563eb;
+
   --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.12);
 
