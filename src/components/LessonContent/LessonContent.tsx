@@ -74,6 +74,32 @@ export default function LessonContent({ content }: LessonContentProps) {
                 ))}
               </ol>
             );
+          case "table":
+            return (
+              <div key={index} className={styles.tableWrapper}>
+                <table className={styles.table}>
+                  <thead>
+                    <tr>
+                      {(block.value as string[][])[0].map((cell, cellIndex) => (
+                        <th key={cellIndex}>{cell}</th>
+                      ))}
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    {(block.value as string[][])
+                      .slice(1)
+                      .map((row, rowIndex) => (
+                        <tr key={rowIndex}>
+                          {row.map((cell, cellIndex) => (
+                            <td key={cellIndex}>{cell}</td>
+                          ))}
+                        </tr>
+                      ))}
+                  </tbody>
+                </table>
+              </div>
+            );
 
           default:
             return null;

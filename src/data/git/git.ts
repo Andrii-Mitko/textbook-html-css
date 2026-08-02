@@ -5,19 +5,27 @@ import { branches } from "./branches";
 import { remotes } from "./remotes";
 import { remoteOperations } from "./remoteOperations";
 
-export interface LessonContent {
-  type:
-    | "heading"
-    | "paragraph"
-    | "code"
-    | "list"
-    | "note"
-    | "hint"
-    | "answer"
-    | "task";
-  value: string | string[];
-  language?: string;
-}
+export type LessonContent =
+  | {
+      type:
+        | "heading"
+        | "paragraph"
+        | "code"
+        | "note"
+        | "hint"
+        | "answer"
+        | "diagram";
+      value: string;
+      language?: string;
+    }
+  | {
+      type: "list" | "task";
+      value: string[];
+    }
+  | {
+      type: "table";
+      value: [string, ...string[]][];
+    };
 
 export interface Lesson {
   id: string;
