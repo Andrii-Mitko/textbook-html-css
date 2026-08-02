@@ -1,0 +1,339 @@
+:root {
+  --color-primary: #4f46e5;
+  --color-primary-hover: #4338ca;
+
+  --color-secondary: #06b6d4;
+  --color-accent: #f97316;
+
+  --color-success: #22c55e;
+  --color-danger: #ef4444;
+
+  --color-bg: #f5f7ff;
+  --color-surface: #ffffff;
+  --color-text: #1e293b;
+  --color-text-light: #64748b;
+
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.12);
+
+  --radius: 16px;
+
+  --transition: 250ms ease;
+}
+
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  font-size: 16px;
+  line-height: 1.6;
+
+  color: var(--color-text);
+
+  background: linear-gradient(180deg, #eef4ff 0%, #f7fbff 40%, #ffffff 100%);
+}
+
+/* ==========================================================================
+   Container
+   ========================================================================== */
+
+.container {
+  width: min(100% - 32px, 1200px);
+  margin-inline: auto;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.header {
+  background: linear-gradient(135deg, #4f46e5, #2563eb, #06b6d4);
+
+  color: white;
+
+  padding: 24px 0;
+
+  box-shadow: var(--shadow-md);
+}
+
+.header h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+main {
+  padding: 32px 0 60px;
+}
+
+/* ==========================================================================
+   Section title
+   ========================================================================== */
+
+.title {
+  margin-bottom: 32px;
+
+  text-align: center;
+
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* ==========================================================================
+   Card
+   ========================================================================== */
+
+.card {
+  background: white;
+
+  border-radius: var(--radius);
+
+  padding: 24px;
+
+  box-shadow: var(--shadow-sm);
+
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: var(--shadow-md);
+}
+
+.card h2 {
+  margin-bottom: 12px;
+
+  color: var(--color-primary);
+
+  font-size: 1.4rem;
+}
+
+.card p {
+  color: var(--color-text-light);
+
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   Button
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 22px;
+
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+
+  color: white;
+
+  font-weight: 700;
+
+  transition: var(--transition);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+
+  background: linear-gradient(135deg, var(--color-primary-hover), #0891b2);
+}
+
+/* ==========================================================================
+   Links list
+   ========================================================================== */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.list li a {
+  display: block;
+
+  padding: 20px;
+
+  border-radius: 16px;
+
+  background: white;
+
+  box-shadow: var(--shadow-sm);
+
+  transition: var(--transition);
+
+  border-left: 6px solid var(--color-primary);
+}
+
+.list li:nth-child(2n) a {
+  border-left-color: var(--color-secondary);
+}
+
+.list li:nth-child(3n) a {
+  border-left-color: var(--color-accent);
+}
+
+.list li a:hover {
+  transform: translateX(8px);
+
+  box-shadow: var(--shadow-md);
+}
+
+.list h2 {
+  font-size: 1.2rem;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer {
+  padding: 32px 0;
+
+  text-align: center;
+
+  color: var(--color-text-light);
+}
+
+/* ==========================================================================
+   TABLET
+   ========================================================================== */
+
+@media (min-width: 768px) {
+  .header {
+    padding: 36px 0;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .list {
+    gap: 24px;
+  }
+
+  .list h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* ==========================================================================
+   DESKTOP
+   ========================================================================== */
+
+@media (min-width: 1200px) {
+  .header h1 {
+    font-size: 3.5rem;
+  }
+
+  .title {
+    font-size: 3.2rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    padding: 32px;
+  }
+
+  .list h2 {
+    font-size: 1.5rem;
+  }
+}
