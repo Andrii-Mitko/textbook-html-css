@@ -10,18 +10,19 @@ import LessonNavigation from "@/components/LessonNavigation/LessonNavigation";
 
 interface LessonPageProps {
   params: Promise<{
+    id: string;
     lesson: string;
   }>;
 }
 
 export default async function LessonPage({ params }: LessonPageProps) {
-  const { lesson } = await params;
+  const { id, lesson } = await params;
 
-  const currentLesson = getLessonById(lesson);
+  const currentLesson = getLessonById(id, lesson);
 
-  const previousLesson = getPreviousLesson(lesson);
+  const previousLesson = getPreviousLesson(id, lesson);
 
-  const nextLesson = getNextLesson(lesson);
+  const nextLesson = getNextLesson(id, lesson);
 
   if (!currentLesson) {
     notFound();
@@ -37,7 +38,11 @@ export default async function LessonPage({ params }: LessonPageProps) {
         <LessonContent content={currentLesson.content} />
       </div>
 
-      <LessonNavigation previous={previousLesson} next={nextLesson} />
+      <LessonNavigation
+        tutorialId={id}
+        previous={previousLesson}
+        next={nextLesson}
+      />
     </article>
   );
 }

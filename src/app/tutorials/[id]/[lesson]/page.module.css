@@ -3,13 +3,13 @@
 
   margin: 0 auto;
 
-  padding: 32px 0 60px;
+  padding: 20px 0 32px;
 }
 
 .title {
   margin-bottom: 16px;
 
-  font-size: 42px;
+  font-size: 26px;
 
   font-weight: 800;
 
@@ -29,16 +29,15 @@
 .content {
   background: var(--color-surface);
 
-  padding: 32px;
+  padding: 16px;
 
   border-radius: var(--radius);
 
   box-shadow: var(--shadow-sm);
 }
 
-/* tablet */
-
-@media (max-width: 768px) {
+/* Tablet */
+@media (min-width: 768px) {
   .page {
     padding: 24px 0 40px;
   }
@@ -52,14 +51,17 @@
   }
 }
 
-/* mobile */
+/* Desktop */
+@media (min-width: 1200px) {
+  .page {
+    padding: 32px 0 60px;
+  }
 
-@media (max-width: 480px) {
   .title {
-    font-size: 26px;
+    font-size: 42px;
   }
 
   .content {
-    padding: 16px;
+    padding: 32px;
   }
 }

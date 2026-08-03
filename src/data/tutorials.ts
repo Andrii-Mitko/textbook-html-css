@@ -7,8 +7,9 @@ export interface Tutorial {
   sections: number;
   lessons: number;
   level: "Початковий" | "Середній" | "Просунутий";
-}
 
+  category: "Навчання" | "Довідники" | "Практика" | "Інструменти";
+}
 export const tutorials: Tutorial[] = [
   {
     id: "git",
@@ -20,16 +21,18 @@ export const tutorials: Tutorial[] = [
     sections: 6,
     lessons: 66,
     level: "Початковий",
+    category: "Інструменти",
   },
   {
     id: "html",
-    title: "Основний навчальник HTML",
+    title: "Основний навчальник HTML + CSS",
     description: "Вивчення HTML від першого тега до семантичної розмітки.",
     icon: "📄",
     href: "/tutorials/html",
-    sections: 0,
-    lessons: 0,
+    sections: 10,
+    lessons: 250,
     level: "Початковий",
+    category: "Навчання",
   },
   {
     id: "css",
@@ -40,16 +43,18 @@ export const tutorials: Tutorial[] = [
     sections: 0,
     lessons: 0,
     level: "Початковий",
+    category: "Навчання",
   },
   {
     id: "advanced",
     title: "Поглиблений навчальник",
-    description: "JavaScript, TypeScript, React, Next.js та Node.js.",
+    description: "Поглиблене HTML, CSS, архітектура стилів та сучасна верстка.",
     icon: "🚀",
     href: "/tutorials/advanced",
     sections: 0,
     lessons: 0,
     level: "Просунутий",
+    category: "Навчання",
   },
   {
     id: "less",
@@ -60,6 +65,7 @@ export const tutorials: Tutorial[] = [
     sections: 0,
     lessons: 0,
     level: "Середній",
+    category: "Навчання",
   },
   {
     id: "sass",
@@ -70,6 +76,7 @@ export const tutorials: Tutorial[] = [
     sections: 0,
     lessons: 0,
     level: "Середній",
+    category: "Навчання",
   },
   {
     id: "html-reference",
@@ -80,6 +87,7 @@ export const tutorials: Tutorial[] = [
     sections: 0,
     lessons: 0,
     level: "Початковий",
+    category: "Довідники",
   },
   {
     id: "css-reference",
@@ -90,15 +98,17 @@ export const tutorials: Tutorial[] = [
     sections: 0,
     lessons: 0,
     level: "Початковий",
+    category: "Довідники",
   },
   {
     id: "tasks",
-    title: "Задачник",
+    title: "Задачник по рівнях",
     description: "Практичні завдання різних рівнів складності.",
     icon: "📝",
     href: "/tasks",
     sections: 0,
     lessons: 0,
     level: "Початковий",
+    category: "Практика",
   },
 ];

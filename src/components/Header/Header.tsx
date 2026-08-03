@@ -1,46 +1,23 @@
-import css from "./Header.module.css";
 import Link from "next/link";
+import css from "./Header.module.css";
+import { tutorials } from "@/data/tutorials";
 
-const Header = () => {
+export default function Header() {
   return (
     <header className={css.header}>
-      <div className="container">
-        <div className={css.wrapper}>
-          <Link href="/" className={css.logo}>
-            Навчальник
-          </Link>
+      <div className={css.wrapper}>
+        <Link href="/" className={css.logo}>
+          📚 WebBook
+        </Link>
 
-          <nav aria-label="Main Navigation">
-            <ul className={css.navigation}>
-              <li>
-                <Link href="/tutorials/git">Git</Link>
-              </li>
-
-              <li>
-                <Link href="/tutorials/html">HTML</Link>
-              </li>
-
-              <li>
-                <Link href="/tutorials/css">CSS</Link>
-              </li>
-
-              <li>
-                <Link href="/tutorials/less">LESS</Link>
-              </li>
-
-              <li>
-                <Link href="/tutorials/sass">SASS</Link>
-              </li>
-
-              <li>
-                <Link href="/tasks">Задачник</Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <nav className={css.navigation}>
+          {tutorials.map((tutorial) => (
+            <Link key={tutorial.id} href={tutorial.href}>
+              {tutorial.icon} {tutorial.title}
+            </Link>
+          ))}
+        </nav>
       </div>
     </header>
   );
-};
-
-export default Header;
+}

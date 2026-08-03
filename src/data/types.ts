@@ -5,6 +5,10 @@ export type ContentBlock =
   | ListBlock
   | NoteBlock
   | WarningBlock
+  | HintBlock
+  | AnswerBlock
+  | ExampleBlock
+  | DiagramBlock
   | ImageBlock
   | TableBlock
   | TaskBlock;
@@ -40,10 +44,32 @@ export interface WarningBlock {
   text: string;
 }
 
+export interface HintBlock {
+  type: "hint";
+  text: string;
+}
+
+export interface AnswerBlock {
+  type: "answer";
+  text: string;
+}
+
+export interface ExampleBlock {
+  type: "example";
+  title: string;
+  text: string;
+}
+
+export interface DiagramBlock {
+  type: "diagram";
+  text: string;
+}
+
 export interface ImageBlock {
   type: "image";
   src: string;
   alt: string;
+  caption?: string;
 }
 
 export interface TableBlock {
@@ -54,5 +80,23 @@ export interface TableBlock {
 
 export interface TaskBlock {
   type: "task";
-  text: string;
+  text: string[];
+}
+
+export interface Lesson {
+  id: string;
+
+  title: string;
+
+  description: string;
+
+  content: ContentBlock[];
+}
+
+export interface Section {
+  id: string;
+
+  title: string;
+
+  lessons: Lesson[];
 }

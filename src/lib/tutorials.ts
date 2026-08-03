@@ -1,18 +1,30 @@
-import { gitTutorial } from "@/data";
-import { Lesson } from "@/data/git/git";
+import { tutorialsData } from "@/data/tutorialsData";
+import { Lesson } from "@/data/types";
 
-export function getAllLessons(): Lesson[] {
-  return gitTutorial.flatMap((section) => section.lessons);
+export function getAllLessons(tutorialId: string): Lesson[] {
+  const tutorial = tutorialsData[tutorialId as keyof typeof tutorialsData];
+
+  if (!tutorial) {
+    return [];
+  }
+
+  return tutorial.sections.flatMap((section) => section.lessons);
 }
 
-export function getLessonById(id: string): Lesson | undefined {
-  return getAllLessons().find((lesson) => lesson.id === id);
+export function getLessonById(
+  tutorialId: string,
+  lessonId: string,
+): Lesson | undefined {
+  return getAllLessons(tutorialId).find((lesson) => lesson.id === lessonId);
 }
 
-export function getPreviousLesson(id: string): Lesson | undefined {
-  const lessons = getAllLessons();
+export function getPreviousLesson(
+  tutorialId: string,
+  lessonId: string,
+): Lesson | undefined {
+  const lessons = getAllLessons(tutorialId);
 
-  const index = lessons.findIndex((lesson) => lesson.id === id);
+  const index = lessons.findIndex((lesson) => lesson.id === lessonId);
 
   if (index <= 0) {
     return undefined;
@@ -21,10 +33,13 @@ export function getPreviousLesson(id: string): Lesson | undefined {
   return lessons[index - 1];
 }
 
-export function getNextLesson(id: string): Lesson | undefined {
-  const lessons = getAllLessons();
+export function getNextLesson(
+  tutorialId: string,
+  lessonId: string,
+): Lesson | undefined {
+  const lessons = getAllLessons(tutorialId);
 
-  const index = lessons.findIndex((lesson) => lesson.id === id);
+  const index = lessons.findIndex((lesson) => lesson.id === lessonId);
 
   if (index === -1 || index === lessons.length - 1) {
     return undefined;

@@ -1,8 +1,9 @@
-import type { LessonContent as LessonContentType } from "@/data/git/git";
+import type { ContentBlock } from "@/data/types";
 import styles from "./LessonContent.module.css";
+import Image from "next/image";
 
 interface LessonContentProps {
-  content: LessonContentType[];
+  content: ContentBlock[];
 }
 
 export default function LessonContent({ content }: LessonContentProps) {
@@ -13,28 +14,28 @@ export default function LessonContent({ content }: LessonContentProps) {
           case "heading":
             return (
               <h2 key={index} className={styles.heading}>
-                {block.value as string}
+                {block.text}
               </h2>
             );
 
           case "paragraph":
             return (
               <p key={index} className={styles.paragraph}>
-                {block.value as string}
+                {block.text}
               </p>
             );
 
           case "code":
             return (
               <pre key={index} className={styles.code}>
-                <code>{block.value as string}</code>
+                <code>{block.code}</code>
               </pre>
             );
 
           case "list":
             return (
               <ul key={index} className={styles.list}>
-                {(block.value as string[]).map((item) => (
+                {block.items.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
@@ -43,8 +44,8 @@ export default function LessonContent({ content }: LessonContentProps) {
           case "note":
             return (
               <div key={index} className={styles.note}>
-                <strong>❗ Важливо:</strong>
-                <p>{block.value as string}</p>
+                {" "}
+                <strong>❗ Важливо:</strong> <p>{block.text}</p>{" "}
               </div>
             );
 
@@ -53,7 +54,7 @@ export default function LessonContent({ content }: LessonContentProps) {
               <details key={index} className={styles.hint}>
                 <summary>💡 Показати підказку</summary>
 
-                <p>{block.value as string}</p>
+                <p>{block.text}</p>
               </details>
             );
 
@@ -62,43 +63,66 @@ export default function LessonContent({ content }: LessonContentProps) {
               <details key={index} className={styles.answer}>
                 <summary>✅ Показати відповідь</summary>
 
-                <pre>{block.value as string}</pre>
+                <pre>{block.text}</pre>
               </details>
             );
 
           case "task":
             return (
-              <ol key={index} className={styles.task}>
-                {(block.value as string[]).map((item, i) => (
-                  <li key={i}>📌{item}</li>
-                ))}
-              </ol>
+              <div key={index} className={styles.task}>
+                <strong>📌 Завдання:</strong>
+
+                <ol>
+                  {block.text.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ol>
+              </div>
             );
+
           case "table":
             return (
               <div key={index} className={styles.tableWrapper}>
                 <table className={styles.table}>
                   <thead>
                     <tr>
-                      {(block.value as string[][])[0].map((cell, cellIndex) => (
-                        <th key={cellIndex}>{cell}</th>
+                      {block.headers.map((header) => (
+                        <th key={header}>{header}</th>
                       ))}
                     </tr>
                   </thead>
 
                   <tbody>
-                    {(block.value as string[][])
-                      .slice(1)
-                      .map((row, rowIndex) => (
-                        <tr key={rowIndex}>
-                          {row.map((cell, cellIndex) => (
-                            <td key={cellIndex}>{cell}</td>
-                          ))}
-                        </tr>
-                      ))}
+                    {block.rows.map((row, rowIndex) => (
+                      <tr key={rowIndex}>
+                        {row.map((cell, cellIndex) => (
+                          <td key={cellIndex}>{cell}</td>
+                        ))}
+                      </tr>
+                    ))}
                   </tbody>
                 </table>
               </div>
+            );
+
+          case "image":
+            return (
+              <Image
+                key={index}
+                src={block.src}
+                alt={block.alt}
+                width={1200}
+                height={800}
+                className={styles.image}
+                sizes="(max-width: 768px) 100vw, 800px"
+              />
+            );
+
+          case "diagram":
+            return (
+              <pre key={index} className={styles.diagram}>
+                {block.text}
+              </pre>
             );
 
           default:
