@@ -47,3 +47,16 @@ export function getNextLesson(
 
   return lessons[index + 1];
 }
+
+export function getLessonIndex(tutorialId: string, lessonId: string): number {
+  return getAllLessons(tutorialId).findIndex(
+    (lesson) => lesson.id === lessonId,
+  );
+}
+export function getLessonsCount(tutorialId: string): number {
+  return getAllLessons(tutorialId).length;
+}
+
+export function getTutorialTitle(tutorialId: string): string {
+  return tutorialsData[tutorialId as keyof typeof tutorialsData]?.title ?? "";
+}
