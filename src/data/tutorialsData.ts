@@ -1,3 +1,4 @@
+import { highestTutorial } from "./highest/highest";
 import { gitTutorial } from "./git/git";
 import { htmlTutorial } from "./html/html";
 
@@ -8,7 +9,11 @@ export const tutorialsData = {
   },
 
   html: {
-    title: "Основний навчальник HTML + CSS",
+    title: "Основний навчальник",
     sections: htmlTutorial,
+  },
+  highest: {
+    title: "Поглиблений навчальник",
+    sections: highestTutorial,
   },
 };
