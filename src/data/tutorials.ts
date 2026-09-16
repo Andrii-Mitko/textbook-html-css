@@ -13,7 +13,7 @@ export interface Tutorial {
 export const tutorials: Tutorial[] = [
   {
     id: "git",
-    title: "Навчальник Git",
+    title: "Git",
     description:
       "Повний курс Git від основ до роботи з віддаленими репозиторіями.",
     icon: "🌿",
@@ -25,7 +25,7 @@ export const tutorials: Tutorial[] = [
   },
   {
     id: "html",
-    title: "Основний навчальник",
+    title: "Основи HTML+CSS",
     description: "Вивчення HTML від першого тега до семантичної розмітки.",
     icon: "📄",
     href: "/tutorials/html",
@@ -36,7 +36,7 @@ export const tutorials: Tutorial[] = [
   },
   {
     id: "highest",
-    title: "Поглиблений навчальник",
+    title: "Поглиблений HTML+CSS",
     description: "Поглиблене HTML, CSS, архітектура стилів та сучасна верстка.",
     icon: "🚀",
     href: "/tutorials/highest",
