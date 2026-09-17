@@ -34,3 +34,14 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Author
+
+**Andrii Mitko** — Full Stack JavaScript Developer
+
+Building modern, scalable, and user-friendly web applications with React, Next.js, TypeScript, Node.js, and MongoDB.
+
+- Portfolio: [andrii-mitko-brand.vercel.app](https://andrii-mitko-brand.vercel.app/)
+- GitHub: [@Andrii-Mitko](https://github.com/Andrii-Mitko)
+- LinkedIn: [andrii-mitko](https://www.linkedin.com/in/andrii-mitko/)
+- Email: [andreymit123@gmail.com](mailto:andreymit123@gmail.com)
