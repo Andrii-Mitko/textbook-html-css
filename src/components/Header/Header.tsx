@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import css from "./Header.module.css";
 import { tutorials } from "@/data/tutorials";
@@ -7,7 +8,15 @@ export default function Header() {
     <header className={css.header}>
       <div className={css.wrapper}>
         <Link href="/" className={css.logo}>
-          📚 WebBook
+          <Image
+            src="/favicon/android-chrome-192x192.png"
+            alt="WebBook"
+            width={40}
+            height={40}
+            className={css.logoImage}
+          />
+
+          <span>WebBook</span>
         </Link>
 
         <nav className={css.navigation}>
