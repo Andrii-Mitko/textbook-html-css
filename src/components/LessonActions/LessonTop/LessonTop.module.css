@@ -1,0 +1,57 @@
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: fit-content;
+  min-width: 140px;
+  min-height: 46px;
+
+  margin: 36px auto 24px;
+  padding: 10px 20px;
+
+  border: 1px solid var(--color-primary);
+  border-radius: 12px;
+
+  background-color: var(--color-primary);
+
+  color: #ffffff;
+
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 12px rgb(37 99 235 / 18%);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.top:hover {
+  transform: translateY(-3px);
+
+  background-color: var(--color-primary-hover);
+
+  box-shadow: 0 7px 18px rgb(37 99 235 / 25%);
+}
+
+.top:active {
+  transform: translateY(-1px);
+}
+
+.top:focus-visible {
+  outline: 3px solid rgb(37 99 235 / 25%);
+  outline-offset: 3px;
+}
+
+@media (min-width: 768px) {
+  .top {
+    min-width: 150px;
+    min-height: 48px;
+  }
+}
