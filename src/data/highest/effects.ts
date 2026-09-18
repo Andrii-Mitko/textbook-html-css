@@ -629,6 +629,79 @@ export const effects: Lesson[] = [
       },
     ],
   },
+
+  {
+    id: "css-animation-shorthand",
+    title: "Скорочена властивість для анімації в CSS",
+    description:
+      "Вивчаємо скорочений запис властивості animation, яка дозволяє записати основні параметри CSS-анімації в одному рядку.",
+    content: [
+      { type: "heading", text: "Що таке animation" },
+      {
+        type: "paragraph",
+        text: "Властивість animation є скороченим записом для налаштування CSS-анімації. За її допомогою можна в одному рядку вказати назву анімації, її тривалість, затримку та функцію плавності.",
+      },
+      {
+        type: "paragraph",
+        text: "Замість того щоб записувати кожну властивість окремо, можна об'єднати їх у властивості animation.",
+      },
+      {
+        type: "code",
+        language: "css",
+        code: `#elem { animation-name: anim; animation-duration: 4s; animation-delay: 5s; animation-timing-function: ease; },`,
+      },
+      { type: "heading", text: "Скорочений запис" },
+      {
+        type: "paragraph",
+        text: "У скороченому записі спочатку вказується назва анімації, потім тривалість, функція плавності та затримка.",
+      },
+      {
+        type: "code",
+        language: "css",
+        code: `#elem { animation: anim 4s ease 5s; },`,
+      },
+      {
+        type: "list",
+        items: [
+          "anim — назва анімації (animation-name).",
+          "4s — тривалість одного циклу анімації (animation-duration).",
+          "ease — функція плавності анімації (animation-timing-function).",
+          "5s — затримка перед початком анімації (animation-delay).",
+        ],
+      },
+      {
+        type: "example",
+        title: "Результат",
+        text: "Для елемента буде запущена анімація anim тривалістю 4 секунди із затримкою 5 секунд та функцією плавності ease.",
+      },
+      {
+        type: "note",
+        text: "Якщо в animation вказано два значення часу, перше зазвичай визначає animation-duration, а друге — animation-delay.",
+      },
+      { type: "heading", text: "Практичне завдання" },
+      {
+        type: "task",
+        text: [
+          "Перепишіть наведений код через скорочену властивість animation.",
+          "Збережіть усі задані параметри анімації.",
+        ],
+      },
+      {
+        type: "code",
+        language: "css",
+        code: `#elem { animation-name: anim; animation-duration: 4s; animation-delay: 5s; animation-timing-function: ease; },`,
+      },
+      {
+        type: "hint",
+        text: "Запишіть назву анімації, тривалість, функцію плавності та затримку через пробіл у властивості animation.",
+      },
+      {
+        type: "answer",
+        text: "#elem { animation: anim 4s ease 5s;}",
+      },
+    ],
+  },
+
   {
     id: "css-animation-play-state",
     title: "Стан анімації в CSS",
