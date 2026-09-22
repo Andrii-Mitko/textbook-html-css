@@ -24,8 +24,9 @@ export const basics: Lesson[] = [
       {
         type: "code",
         language: "text",
-        code: `index.html
-styles.css`,
+        code: `
+        index.html
+        styles.css`,
       },
 
       {
@@ -95,8 +96,9 @@ project/
       {
         type: "code",
         language: "text",
-        code: `index.html
-styles.css`,
+        code: `
+        index.html
+        styles.css`,
       },
 
       {
@@ -423,7 +425,7 @@ Changes to be committed:
     id: "track-folder",
     title: "Початок відстеження папки",
     description:
-      "Додавання всіх файлів із папки до області підготовки за допомогою команди git add.",
+      "Додавання всіх файлів із папки до області підготовки за допомогою команди git add .",
     content: [
       {
         type: "heading",
@@ -827,7 +829,8 @@ git status
       {
         type: "code",
         language: "text",
-        code: `[main (root-commit) 3a4f6d2]
+        code: `
+[main (root-commit) 3a4f6d2]
 Перший коміт
 
 2 files changed

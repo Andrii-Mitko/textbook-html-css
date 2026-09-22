@@ -41,7 +41,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div class="parent">
+        code: `
+<div class="parent">
   <div class="child">1</div>
   <div class="child">2</div>
   <div class="child">3</div>
@@ -50,7 +51,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
   flex-direction: row;
   width: 300px;
@@ -76,7 +78,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -102,7 +105,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
 }
 
@@ -124,7 +128,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
   flex-direction: column;
 }
@@ -158,7 +163,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код -->
+        code: `
+<!-- Початковий код -->
 <div class="parent">
   <div class="child">1</div>
   <div class="child">2</div>
@@ -173,7 +179,8 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent {
+        text: `
+.parent {
   display: flex;
   flex-direction: row;
 }
@@ -197,7 +204,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код -->
+        code: `
+<!-- Початковий код -->
 <div class="parent">
   <div class="child">Елемент</div>
 </div>`,
@@ -208,7 +216,8 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent {
+        text: `
+.parent {
   display: flex;
   flex-direction: row;
 }
@@ -233,7 +242,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код -->
+        code: `
+<!-- Початковий код -->
 <div class="parent">
   <div class="child">Елемент</div>
 </div>`,
@@ -244,7 +254,8 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent {
+        text: `
+.parent {
   display: flex;
   flex-direction: column;
 }
@@ -284,7 +295,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div class="parent">
+        code: `
+<div class="parent">
   <div class="child">1</div>
   <div class="child">2</div>
 </div>`,
@@ -292,7 +304,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
   width: 300px;
   height: 200px;
@@ -341,7 +354,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div class="parent">
+        code: `
+<div class="parent">
   <div class="child elem1">1</div>
   <div class="child elem2">2</div>
 </div>`,
@@ -349,7 +363,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
   width: 300px;
   height: 200px;
@@ -388,7 +403,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div class="parent">
+        code: `
+<div class="parent">
   <div class="child elem1">1</div>
   <div class="child elem2">2</div>
 </div>`,
@@ -396,7 +412,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
   width: 400px;
   height: 200px;
@@ -439,7 +456,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
   width: 400px;
   height: 200px;
@@ -482,7 +500,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код -->
+        code: `
+<!-- Початковий код -->
 <div class="parent">
   <div class="child elem1">1</div>
   <div class="child elem2">2</div>
@@ -492,7 +511,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
   width: 500px;
   height: 200px;
@@ -541,7 +561,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код -->
+        code: `
+<!-- Початковий код -->
 <div class="parent">
   <div class="child elem1">1</div>
   <div class="child elem2">2</div>
@@ -551,7 +572,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
   width: 700px;
   height: 200px;
@@ -599,7 +621,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код -->
+        code: `
+<!-- Початковий код -->
 <div class="parent">
   <div class="child elem1">1</div>
   <div class="child elem2">2</div>
@@ -609,7 +632,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
   width: 500px;
   height: 200px;
@@ -658,7 +682,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код -->
+        code: `
+<!-- Початковий код -->
 <div class="parent">
   <div class="child elem1">1</div>
   <div class="child elem2">2</div>
@@ -669,7 +694,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
   width: 1000px;
   height: 200px;
@@ -754,7 +780,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div class="parent">
+        code: `
+<div class="parent">
   <div class="child elem1">1</div>
   <div class="child elem2">2</div>
   <div class="child elem3">3</div>
@@ -763,7 +790,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
   width: 500px;
   height: 200px;
@@ -821,7 +849,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код -->
+        code: `
+<!-- Початковий код -->
 <div class="parent">
   <div class="child elem1">1</div>
   <div class="child elem2">2</div>
@@ -831,7 +860,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
   width: 500px;
   height: 200px;
@@ -880,7 +910,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код -->
+        code: `
+<!-- Початковий код -->
 <div class="parent">
   <div class="child elem1">1</div>
   <div class="child elem2">2</div>
@@ -890,7 +921,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
   width: 900px;
   height: 200px;
@@ -939,7 +971,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код -->
+        code: `
+<!-- Початковий код -->
 <div class="parent">
   <div class="child elem1">1</div>
   <div class="child elem2">2</div>
@@ -950,7 +983,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
   width: 700px;
   height: 200px;
@@ -1006,7 +1040,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div class="parent">
+        code: `
+<div class="parent">
   <div class="child elem1">text text text</div>
   <div class="child elem2">text</div>
 </div>`,
@@ -1014,7 +1049,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
   width: 300px;
   height: 200px;
@@ -1043,7 +1079,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div class="parent">
+        code: `
+<div class="parent">
   <div class="child elem1">text text text</div>
   <div class="child elem2">text</div>
 </div>`,
@@ -1051,7 +1088,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent {
+        code: `
+.parent {
   display: flex;
   width: 300px;
   height: 200px;
@@ -1095,7 +1133,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код -->
+        code: `
+<!-- Початковий код -->
 <div class="parent">
   <div class="child elem1">Це довший текст</div>
   <div class="child elem2">Текст</div>
@@ -1107,7 +1146,8 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent {
+        text: `
+.parent {
   display: flex;
   width: 400px;
 }
@@ -1140,7 +1180,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код -->
+        code: `
+<!-- Початковий код -->
 <div class="parent">
   <div class="child elem1">Короткий текст</div>
   <div class="child elem2">Текст</div>
@@ -1152,7 +1193,8 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent {
+        text: `
+.parent {
   display: flex;
   width: 400px;
 }
@@ -1186,12 +1228,38 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div class="parent"> <div class="child elem1"></div> <div class="child elem2"></div> <div class="child elem3"></div> </div>`,
+        code: `
+<div class="parent">
+ <div class="child elem1"></div>
+ <div class="child elem2"></div>
+ <div class="child elem3"></div>
+</div>`,
       },
       {
         type: "code",
         language: "css",
-        code: `.parent { display: flex; width: 400px; height: 200px; border: 1px solid red; } .child { height: 50px; border: 1px solid green; } .elem1 { width: 100px; } .elem2 { flex-grow: 1; } .elem3 { width: 100px; }`,
+        code: `
+.parent {
+  display: flex;
+  width: 400px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+.child {
+  height: 50px; border: 1px solid green;
+}
+  
+.elem1 {
+  width: 100px;
+}
+.elem2 {
+  flex-grow: 1;
+}
+  
+.elem3 {
+width: 100px;
+}`,
       },
       {
         type: "example",
@@ -1214,7 +1282,24 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.parent { display: flex; width: 80%; border: 1px solid red; } .elem1 { width: 100px; } .elem2 { flex-grow: 1; } .elem3 { width: 100px; }`,
+        code: `
+.parent {
+  display: flex;
+  width: 80%;
+  border: 1px solid red;
+}
+  
+.elem1 {
+  width: 100px;
+}
+  
+.elem2 {
+  flex-grow: 1;
+}
+  
+.elem3 {
+  width: 100px;
+}`,
       },
       {
         type: "example",
@@ -1239,7 +1324,13 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child elem1"></div> <div class="child elem2"></div> <div class="child elem3"></div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="parent">
+  <div class="child elem1"></div>
+  <div class="child elem2"></div>
+  <div class="child elem3"></div>
+</div>`,
       },
       {
         type: "hint",
@@ -1263,7 +1354,13 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child elem1"></div> <div class="child elem2"></div> <div class="child elem3"></div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="parent">
+  <div class="child elem1"></div>
+  <div class="child elem2"></div>
+  <div class="child elem3"></div>
+</div>`,
       },
       {
         type: "hint",
@@ -1271,7 +1368,28 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent { display: flex; width: 80%; } .child { height: 50px; border: 1px solid green; } .elem1 { width: 120px; } .elem2 { flex-grow: 1; } .elem3 { width: 120px; }`,
+        text: `
+.parent {
+  display: flex;
+  width: 80%;
+}
+  
+.child {
+  height: 50px;
+  border: 1px solid green;
+}
+  
+.elem1 {
+  width: 120px;
+}
+  
+.elem2 {
+  flex-grow: 1;
+}
+  
+.elem3 {
+  width: 120px;
+}`,
       },
     ],
   },
@@ -1292,12 +1410,28 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div class="parent"> <div class="child">1</div> <div class="child">2</div> <div class="child">3</div> </div>`,
+        code: `
+<div class="parent">
+  <div class="child">1</div>
+  <div class="child">2</div>
+  <div class="child">3</div>
+</div>`,
       },
       {
         type: "code",
         language: "css",
-        code: `.parent { display: flex; width: 300px; border: 1px solid red; } .child { width: 100px; height: 50px; border: 1px solid green; }`,
+        code: `
+.parent {
+  display: flex;
+  width: 300px;
+  border: 1px solid red;
+}
+  
+.child {
+  width: 100px;
+  height: 50px;
+  border: 1px solid green;
+}`,
       },
       {
         type: "example",
@@ -1312,7 +1446,13 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div class="parent"> <div class="child">1</div> <div class="child">2</div> <div class="child">3</div> <div class="child">4</div> </div>`,
+        code: `
+<div class="parent">
+   <div class="child">1</div>
+   <div class="child">2</div>
+   <div class="child">3</div>
+   <div class="child">4</div>
+</div>`,
       },
       {
         type: "example",
@@ -1327,7 +1467,11 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.child { width: 100px; flex-shrink: 1; }`,
+        code: `
+.child {
+  width: 100px;
+  flex-shrink: 1;
+}`,
       },
       {
         type: "paragraph",
@@ -1345,7 +1489,11 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.child { width: 100px; flex-shrink: 0; }`,
+        code: `
+.child {
+  width: 100px;
+  flex-shrink: 0;
+}`,
       },
       {
         type: "paragraph",
@@ -1359,7 +1507,18 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.elem1 { flex-shrink: 1; } .elem2 { flex-shrink: 2; } .elem3 { flex-shrink: 1; }`,
+        code: `
+.elem1 {
+  flex-shrink: 1;
+}
+
+.elem2 {
+  flex-shrink: 2;
+}
+  
+.elem3 {
+  flex-shrink: 1;
+}`,
       },
       {
         type: "note",
@@ -1379,7 +1538,14 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child">1</div> <div class="child">2</div> <div class="child">3</div> <div class="child">4</div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="parent">
+  <div class="child">1</div>
+  <div class="child">2</div>
+  <div class="child">3</div>
+  <div class="child">4</div>
+</div>`,
       },
       {
         type: "hint",
@@ -1387,7 +1553,17 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent { display: flex; width: 300px; } .child { width: 100px; height: 50px; border: 1px solid green; flex-shrink: 0; }`,
+        text: `
+.parent {
+  display: flex; width: 300px;
+}
+  
+.child {
+  width: 100px;
+  height: 50px;
+  border: 1px solid green;
+  flex-shrink: 0;
+}`,
       },
       { type: "heading", text: "Практичне завдання 2" },
       {
@@ -1404,7 +1580,13 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child elem1">1</div> <div class="child elem2">2</div> <div class="child elem3">3</div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="parent">
+  <div class="child elem1">1</div>
+  <div class="child elem2">2</div>
+  <div class="child elem3">3</div>
+</div>`,
       },
       {
         type: "hint",
@@ -1412,7 +1594,27 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent { display: flex; width: 300px; } .child { width: 150px; height: 50px; border: 1px solid green; } .elem1 { flex-shrink: 1; } .elem2 { flex-shrink: 2; } .elem3 { flex-shrink: 1; }`,
+        text: `
+.parent {
+  display: flex; width: 300px;
+}
+  
+.child {
+  width: 150px;
+  height: 50px;
+  border: 1px solid green;
+}
+.elem1 {
+  flex-shrink: 1;
+}
+  
+.elem2 {
+  flex-shrink: 2;
+}
+  
+.elem3 {
+  flex-shrink: 1;
+}`,
       },
     ],
   },
@@ -1430,12 +1632,30 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div class="parent"> <div class="child">1</div> <div class="child">2</div> <div class="child">3</div> <div class="child">4</div> <div class="child">5</div> </div>`,
+        code: `
+<div class="parent">
+  <div class="child">1</div>
+  <div class="child">2</div>
+  <div class="child">3</div>
+  <div class="child">4</div>
+  <div class="child">5</div>
+</div>`,
       },
       {
         type: "code",
         language: "css",
-        code: `.parent { display: flex; width: 100%; border: 1px solid red; } .child { width: 100px; height: 50px; border: 1px solid green; }`,
+        code: `
+.parent {
+  display: flex;
+  width: 100%;
+  border: 1px solid red;
+}
+  
+.child {
+  width: 100px;
+  height: 50px;
+  border: 1px solid green;
+}`,
       },
       {
         type: "example",
@@ -1459,7 +1679,11 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.child { width: 100px; flex-shrink: 1; }`,
+        code: `
+.child {
+  width: 100px;
+  flex-shrink: 1;
+}`,
       },
       {
         type: "note",
@@ -1473,7 +1697,11 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.child { width: 100px; flex-shrink: 0; }`,
+        code: `
+.child {
+  width: 100px;
+  flex-shrink: 0;
+}`,
       },
       {
         type: "example",
@@ -1498,7 +1726,15 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child">1</div> <div class="child">2</div> <div class="child">3</div> <div class="child">4</div> <div class="child">5</div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="parent">
+  <div class="child">1</div>
+  <div class="child">2</div>
+  <div class="child">3</div>
+  <div class="child">4</div>
+  <div class="child">5</div>
+</div>`,
       },
       {
         type: "hint",
@@ -1506,7 +1742,16 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent { display: flex; width: 100%; } .child { width: 100px; height: 50px; border: 1px solid green; }`,
+        text: `
+.parent {
+  display: flex; width: 100%;
+}
+  
+.child {
+  width: 100px;
+  height: 50px;
+  border: 1px solid green;
+}`,
       },
       { type: "heading", text: "Практичне завдання 2" },
       {
@@ -1522,7 +1767,15 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child">1</div> <div class="child">2</div> <div class="child">3</div> <div class="child">4</div> <div class="child">5</div> </div>`,
+        code: `
+      <!-- Початковий код -->
+<div class="parent">
+  <div class="child">1</div>
+  <div class="child">2</div>
+  <div class="child">3</div>
+  <div class="child">4</div>
+  <div class="child">5</div>
+</div>`,
       },
       {
         type: "hint",
@@ -1530,7 +1783,17 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent { display: flex; width: 100%; } .child { width: 100px; height: 50px; border: 1px solid green; flex-shrink: 0; }`,
+        text: `
+.parent {
+  display: flex; width: 100%;
+}
+  
+.child {
+  width: 100px;
+  height: 50px;
+  border: 1px solid green;
+  flex-shrink: 0;
+}`,
       },
     ],
   },
@@ -1548,12 +1811,34 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div class="parent"> <div class="child elem1">1</div> <div class="child elem2">2</div> <div class="child elem3">3</div> <div class="child elem4">4</div> <div class="child elem5">5</div> </div>`,
+        code: `
+<div class="parent">
+  <div class="child elem1">1</div>
+  <div class="child elem2">2</div>
+  <div class="child elem3">3</div>
+  <div class="child elem4">4</div>
+  <div class="child elem5">5</div>
+</div>`,
       },
       {
         type: "code",
         language: "css",
-        code: `.parent { display: flex; width: 100%; border: 1px solid red; } .child { width: 100px; height: 50px; border: 1px solid green; } .elem2 { width: 150px; }`,
+        code: `
+.parent {
+  display: flex;
+  width: 100%;
+  border: 1px solid red;
+}
+  
+.child {
+  width: 100px;
+  height: 50px;
+  border: 1px solid green;
+}
+  
+.elem2 {
+  width: 150px;
+}`,
       },
       {
         type: "example",
@@ -1572,7 +1857,16 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.child { width: 100px; flex-shrink: 1; } .elem2 { width: 150px; flex-shrink: 1; }`,
+        code: `
+.child {
+   width: 100px;
+   flex-shrink: 1;
+}
+   
+.elem2 {
+  width: 150px;
+  flex-shrink: 1;
+}`,
       },
       {
         type: "example",
@@ -1617,7 +1911,15 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child elem1">1</div> <div class="child elem2">2</div> <div class="child elem3">3</div> <div class="child elem4">4</div> <div class="child elem5">5</div> </div>`,
+        code: `
+    <!-- Початковий код -->
+<div class="parent">
+  <div class="child elem1">1</div>
+  <div class="child elem2">2</div>
+  <div class="child elem3">3</div>
+  <div class="child elem4">4</div>
+  <div class="child elem5">5</div>
+</div>`,
       },
       {
         type: "hint",
@@ -1625,7 +1927,21 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent { display: flex; width: 100%; } .child { width: 100px; height: 50px; border: 1px solid green; } .elem2 { width: 150px; }`,
+        text: `
+.parent {
+  display: flex;
+  width: 100%;
+}
+  
+.child {
+  width: 100px;
+  height: 50px;
+  border: 1px solid green;
+}
+  
+.elem2 {
+  width: 150px;
+}`,
       },
       { type: "heading", text: "Практичне завдання 2" },
       {
@@ -1642,7 +1958,13 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child elem1">1</div> <div class="child elem2">2</div> <div class="child elem3">3</div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="parent">
+  <div class="child elem1">1</div>
+  <div class="child elem2">2</div>
+  <div class="child elem3">3</div>
+</div>`,
       },
       {
         type: "hint",
@@ -1650,7 +1972,29 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent { display: flex; width: 400px; } .child { height: 50px; border: 1px solid green; flex-shrink: 1; } .elem1 { width: 100px; } .elem2 { width: 200px; } .elem3 { width: 100px; }`,
+        text: `
+.parent {
+  display: flex;
+  width: 400px;
+}
+  
+.child {
+  height: 50px;
+  border: 1px solid green;
+  flex-shrink: 1;
+}
+  
+.elem1 {
+  width: 100px;
+}
+  
+.elem2 {
+  width: 200px;
+}
+  
+.elem3 {
+  width: 100px;
+}`,
       },
     ],
   },
@@ -1668,12 +2012,34 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div class="parent"> <div class="child elem1">1</div> <div class="child elem2">2</div> <div class="child elem3">3</div> <div class="child elem4">4</div> <div class="child elem5">5</div> </div>`,
+        code: `
+<div class="parent">
+  <div class="child elem1">1</div>
+  <div class="child elem2">2</div>
+  <div class="child elem3">3</div>
+  <div class="child elem4">4</div>
+  <div class="child elem5">5</div>
+</div>`,
       },
       {
         type: "code",
         language: "css",
-        code: `.parent { display: flex; width: 100%; border: 1px solid red; } .child { height: 50px; border: 1px solid green; flex-grow: 1; } .elem2 { flex-grow: 3; }`,
+        code: `
+.parent {
+  display: flex;
+  width: 100%;
+  border: 1px solid red;
+}
+  
+.child {
+  height: 50px;
+  border: 1px solid green;
+  flex-grow: 1;
+}
+  
+.elem2 {
+  flex-grow: 3;
+}`,
       },
       { type: "heading", text: "Як працює flex-grow" },
       {
@@ -1697,7 +2063,15 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.child { flex-grow: 1; flex-shrink: 1; } .elem2 { flex-grow: 3; }`,
+        code: `
+.child {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+  
+.elem2 {
+  flex-grow: 3;
+}`,
       },
       {
         type: "paragraph",
@@ -1738,7 +2112,15 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child elem1">1</div> <div class="child elem2">2</div> <div class="child elem3">3</div> <div class="child elem4">4</div> <div class="child elem5">5</div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="parent">
+  <div class="child elem1">1</div>
+  <div class="child elem2">2</div>
+  <div class="child elem3">3</div>
+  <div class="child elem4">4</div>
+  <div class="child elem5">5</div>
+</div>`,
       },
       {
         type: "hint",
@@ -1746,7 +2128,21 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent { display: flex; width: 100%; } .child { height: 50px; border: 1px solid green; flex-grow: 1; } .elem2 { flex-grow: 3; }`,
+        text: `
+.parent {
+  display: flex;
+  width: 100%;
+}
+  
+.child {
+  height: 50px;
+  border: 1px solid green;
+  flex-grow: 1;
+}
+  
+.elem2 {
+  flex-grow: 3;
+}`,
       },
       { type: "heading", text: "Практичне завдання 2" },
       {
@@ -1763,7 +2159,13 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child elem1">Перший</div> <div class="child elem2">Другий</div> <div class="child elem3">Третій</div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="parent">
+  <div class="child elem1">Перший</div>
+  <div class="child elem2">Другий</div>
+  <div class="child elem3">Третій</div>
+</div>`,
       },
       {
         type: "hint",
@@ -1771,7 +2173,21 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent { display: flex; width: 100%; } .child { height: 50px; border: 1px solid green; flex-grow: 1; } .elem2 { flex-grow: 4; }`,
+        text: `
+.parent {
+  display: flex;
+  width: 100%;
+}
+  
+.child {
+  height: 50px;
+  border: 1px solid green;
+  flex-grow: 1;
+}
+  
+.elem2 {
+  flex-grow: 4;
+}`,
       },
     ],
   },
@@ -1798,18 +2214,28 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "text",
-        code: `200px × 4 = 800px 800px − 700px = 100px`,
+        code: `
+200px × 4 = 800px
+800px − 700px = 100px`,
       },
       {
         type: "paragraph",
         text: "Сумарна ширина елементів на 100px більша за ширину контейнера. Отже, потрібно розподілити 100px стискання між елементами.",
       },
-      { type: "code", language: "text", code: `100px ÷ 4 = 25px` },
+      {
+        type: "code",
+        language: "text",
+        code: `100px ÷ 4 = 25px`,
+      },
       {
         type: "paragraph",
         text: "Якщо всі елементи мають однаковий базовий розмір і однаковий flex-shrink, у цьому спрощеному прикладі кожен елемент втратить по 25px.",
       },
-      { type: "code", language: "text", code: `200px − 25px = 175px` },
+      {
+        type: "code",
+        language: "text",
+        code: `200px − 25px = 175px`,
+      },
       {
         type: "example",
         title: "Результат",
@@ -1823,7 +2249,11 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `.child { width: 200px; flex-shrink: 1; }`,
+        code: `
+.child {
+  width: 200px;
+  flex-shrink: 1;
+}`,
       },
       {
         type: "paragraph",
@@ -1848,7 +2278,14 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child">1</div> <div class="child">2</div> <div class="child">3</div> <div class="child">4</div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="parent">
+  <div class="child">1</div>
+  <div class="child">2</div>
+  <div class="child">3</div>
+  <div class="child">4</div>
+</div>`,
       },
       {
         type: "hint",
@@ -1856,7 +2293,19 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent { display: flex; width: 700px; height: 200px; border: 1px solid red; } .child { width: 200px; height: 50px; border: 1px solid green; }`,
+        text: `
+.parent {
+  display: flex;
+  width: 700px;
+  height: 200px;
+  border: 1px solid red;
+}
+  
+.child {
+  width: 200px;
+  height: 50px;
+  border: 1px solid green;
+}`,
       },
       {
         type: "example",
@@ -1878,7 +2327,13 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child elem1">1</div> <div class="child elem2">2</div> <div class="child elem3">3</div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="parent">
+  <div class="child elem1">1</div>
+  <div class="child elem2">2</div>
+  <div class="child elem3">3</div>
+</div>`,
       },
       {
         type: "hint",
@@ -1886,7 +2341,30 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent { display: flex; width: 200px; height: 200px; border: 1px solid red; } .child { height: 50px; border: 1px solid green; } .elem1 { width: 100px; } .elem2 { width: 100px; } .elem3 { width: 100px; }`,
+        text: `
+.parent {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+}
+  
+.child {
+  height: 50px;
+  border: 1px solid green;
+}
+  
+.elem1 {
+  width: 100px;
+}
+  
+.elem2 {
+  width: 100px;
+}
+  
+.elem3 {
+  width: 100px;
+}`,
       },
       {
         type: "example",
@@ -1914,7 +2392,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "text",
-        code: `частка стискання = від'ємний вільний простір × (базовий розмір елемента / сумарний базовий розмір)`,
+        code: `
+        частка стискання = від'ємний вільний простір × (базовий розмір елемента / сумарний базовий розмір)`,
       },
       { type: "heading", text: "Приклад із чотирма елементами" },
       {
@@ -1924,7 +2403,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "text",
-        code: `400px + 200px + 200px + 200px = 1000px`,
+        code: `
+        400px + 200px + 200px + 200px = 1000px`,
       },
       {
         type: "paragraph",
@@ -1939,7 +2419,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "text",
-        code: `100px × (400px / 1000px) = 40px`,
+        code: `
+        100px × (400px / 1000px) = 40px`,
       },
       {
         type: "paragraph",
@@ -1954,13 +2435,19 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "text",
-        code: `100px × (200px / 1000px) = 20px`,
+        code: `
+        100px × (200px / 1000px) = 20px`,
       },
       {
         type: "paragraph",
         text: "Тому ширина кожного з цих елементів після стискання становитиме:",
       },
-      { type: "code", language: "text", code: `200px − 20px = 180px` },
+      {
+        type: "code",
+        language: "text",
+        code: `
+        200px − 20px = 180px`,
+      },
       {
         type: "example",
         title: "Підсумковий результат",
@@ -1974,12 +2461,38 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div class="parent"> <div class="child elem1">1</div> <div class="child elem2">2</div> <div class="child elem3">3</div> <div class="child elem4">4</div> </div>`,
+        code: `
+<div class="parent">
+  <div class="child elem1">1</div>
+  <div class="child elem2">2</div>
+  <div class="child elem3">3</div>
+  <div class="child elem4">4</div>
+</div>`,
       },
       {
         type: "code",
         language: "css",
-        code: `.parent { display: flex; width: 900px; height: 200px; border: 1px solid red; } .child { height: 50px; border: 1px solid green; } .elem1 { width: 400px; } .elem2, .elem3, .elem4 { width: 200px; }`,
+        code: `
+.parent {
+  display: flex;
+  width: 900px;
+  height: 200px;
+  border: 1px solid red;
+}
+  
+.child {
+  height: 50px;
+  border: 1px solid green;
+}
+  
+.elem1 {
+  width: 400px;
+}
+.elem2,
+.elem3,
+.elem4 {
+  width: 200px;
+}`,
       },
       {
         type: "paragraph",
@@ -2000,7 +2513,14 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child elem1">1</div> <div class="child elem2">2</div> <div class="child elem3">3</div> <div class="child elem4">4</div> </div>`,
+        code: `
+  <!-- Початковий код -->
+<div class="parent">
+  <div class="child elem1">1</div>
+  <div class="child elem2">2</div>
+  <div class="child elem3">3</div>
+  <div class="child elem4">4</div>
+</div>`,
       },
       {
         type: "hint",
@@ -2008,7 +2528,28 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent { display: flex; width: 900px; height: 200px; border: 1px solid red; } .child { height: 50px; border: 1px solid green; } .elem1 { width: 400px; } .elem2, .elem3, .elem4 { width: 200px; }`,
+        text: `
+.parent {
+  display: flex;
+  width: 900px;
+  height: 200px;
+  border: 1px solid red;
+}
+  
+.child {
+  height: 50px;
+  border: 1px solid green;
+}
+
+.elem1 {
+  width: 400px;
+}
+  
+.elem2,
+.elem3,
+.elem4 {
+  width: 200px;
+}`,
       },
       { type: "heading", text: "Практичне завдання 2" },
       {
@@ -2027,7 +2568,13 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child elem1">1</div> <div class="child elem2">2</div> <div class="child elem3">3</div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="parent">
+  <div class="child elem1">1</div>
+  <div class="child elem2">2</div>
+  <div class="child elem3">3</div>
+</div>`,
       },
       {
         type: "hint",
@@ -2035,7 +2582,30 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent { display: flex; width: 300px; height: 200px; border: 1px solid red; } .child { height: 50px; border: 1px solid green; } .elem1 { width: 300px; } .elem2 { width: 100px; } .elem3 { width: 100px; }`,
+        text: `
+.parent {
+  display: flex;
+  width: 300px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+.child {
+  height: 50px;
+  border: 1px solid green;
+}
+  
+.elem1 {
+  width: 300px;
+}
+  
+.elem2 {
+  width: 100px;
+}
+  
+.elem3 {
+  width: 100px;
+}`,
       },
       {
         type: "example",
@@ -2068,14 +2638,19 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "text",
-        code: `зважена ширина = базова ширина × flex-shrink`,
+        code: `
+        зважена ширина = базова ширина × flex-shrink`,
       },
       {
         type: "example",
         title: "Приклад",
         text: "Якщо базова ширина елемента становить 200px, а flex-shrink дорівнює 3, його зважена ширина становить 600px.",
       },
-      { type: "code", language: "text", code: `200px × 3 = 600px` },
+      {
+        type: "code",
+        language: "text",
+        code: `200px × 3 = 600px`,
+      },
       { type: "heading", text: "Формула стискання" },
       {
         type: "paragraph",
@@ -2094,7 +2669,9 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "text",
-        code: `400px + 3 × 200px = 1000px 1000px − 900px = 100px`,
+        code: `
+400px + 3 × 200px = 1000px
+1000px − 900px = 100px`,
       },
       {
         type: "paragraph",
@@ -2104,13 +2681,18 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "text",
-        code: `400px × 2 = 800px 200px × 1 = 200px 200px × 1 = 200px 200px × 1 = 200px`,
+        code: `
+400px × 2 = 800px
+200px × 1 = 200px
+200px × 1 = 200px
+200px × 1 = 200px`,
       },
       { type: "paragraph", text: "Сумарна зважена ширина становить:" },
       {
         type: "code",
         language: "text",
-        code: `800px + 200px + 200px + 200px = 1400px`,
+        code: `
+800px + 200px + 200px + 200px = 1400px`,
       },
       { type: "heading", text: "Стискання першого елемента" },
       {
@@ -2120,7 +2702,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "text",
-        code: `100px × (800px / 1400px) = 57,14px`,
+        code: `
+100px × (800px / 1400px) = 57,14px`,
       },
       {
         type: "paragraph",
@@ -2129,7 +2712,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "text",
-        code: `400px − 57,14px = 342,86px ≈ 343px`,
+        code: `
+400px − 57,14px = 342,86px ≈ 343px`,
       },
       { type: "heading", text: "Стискання інших елементів" },
       {
@@ -2139,7 +2723,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "text",
-        code: `100px × (200px / 1400px) = 14,29px`,
+        code: `
+100px × (200px / 1400px) = 14,29px`,
       },
       {
         type: "paragraph",
@@ -2148,7 +2733,8 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "text",
-        code: `200px − 14,29px = 185,71px ≈ 186px`,
+        code: `
+200px − 14,29px = 185,71px ≈ 186px`,
       },
       {
         type: "example",
@@ -2174,7 +2760,14 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child elem1">1</div> <div class="child elem2">2</div> <div class="child elem3">3</div> <div class="child elem4">4</div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="parent">
+  <div class="child elem1">1</div>
+  <div class="child elem2">2</div>
+  <div class="child elem3">3</div>
+  <div class="child elem4">4</div>
+</div>`,
       },
       {
         type: "hint",
@@ -2182,7 +2775,28 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent { display: flex; width: 900px; } .child { height: 50px; border: 1px solid green; } .elem1 { width: 400px; flex-shrink: 2; } .elem2, .elem3, .elem4 { width: 200px; flex-shrink: 1; }`,
+        text: `
+.parent {
+  display: flex;
+  width: 900px;
+}
+  
+.child {
+  height: 50px;
+  border: 1px solid green;
+}
+  
+.elem1 {
+  width: 400px;
+  flex-shrink: 2;
+}
+  
+.elem2,
+.elem3,
+.elem4 {
+  width: 200px;
+  flex-shrink: 1;
+}`,
       },
       {
         type: "example",
@@ -2204,7 +2818,13 @@ export const advancedFlexbox: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child elem1">1</div> <div class="child elem2">2</div> <div class="child elem3">3</div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="parent">
+  <div class="child elem1">1</div>
+  <div class="child elem2">2</div>
+  <div class="child elem3">3</div>
+</div>`,
       },
       {
         type: "hint",
@@ -2212,7 +2832,31 @@ export const advancedFlexbox: Lesson[] = [
       },
       {
         type: "answer",
-        text: `.parent { display: flex; width: 200px; } .child { height: 50px; border: 1px solid green; } .elem1 { width: 100px; flex-shrink: 2; } .elem2 { width: 100px; flex-shrink: 1; } .elem3 { width: 100px; flex-shrink: 1; }`,
+        text: `
+.parent {
+  display: flex;
+  width: 200px;
+}
+  
+.child {
+  height: 50px;
+  border: 1px solid green;
+}
+  
+.elem1 {
+  width: 100px;
+  flex-shrink: 2;
+}
+  
+.elem2 {
+  width: 100px;
+  flex-shrink: 1;
+}
+  
+.elem3 {
+  width: 100px;
+  flex-shrink: 1;
+}`,
       },
       {
         type: "example",

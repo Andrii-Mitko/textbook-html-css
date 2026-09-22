@@ -26,14 +26,16 @@ export const boxModel: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div id="parent">
-  <div id="child"></div>
-</div>`,
+        code: `
+        <div id="parent">
+          <div id="child"></div>
+        </div>`,
       },
       {
         type: "code",
         language: "css",
-        code: `#parent {
+        code: `
+#parent {
   width: 300px;
   border: 1px solid red;
 }
@@ -55,7 +57,8 @@ export const boxModel: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `#parent {
+        code: `
+#parent {
   width: 300px;
   border: 1px solid red;
 }
@@ -98,7 +101,8 @@ export const boxModel: Lesson[] = [
       },
       {
         type: "answer",
-        text: `#child {
+        text: `
+#child {
   height: 100px;
   border: 1px solid green;
   margin: 30px;
@@ -136,14 +140,16 @@ export const boxModel: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div id="parent">
+        code: `
+<div id="parent">
   <div id="child"></div>
 </div>`,
       },
       {
         type: "code",
         language: "css",
-        code: `#parent {
+        code: `
+#parent {
   width: 300px;
   border: 1px solid red;
 }
@@ -181,7 +187,8 @@ export const boxModel: Lesson[] = [
       },
       {
         type: "answer",
-        text: `#child {
+        text: `
+#child {
   margin-top: 10px;
   margin-right: 20px;
   margin-bottom: 30px;
@@ -228,14 +235,16 @@ export const boxModel: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div id="parent">
+        code: `
+<div id="parent">
   <div id="child"></div>
 </div>`,
       },
       {
         type: "code",
         language: "css",
-        code: `#parent {
+        code: `
+#parent {
   width: 300px;
   border: 1px solid red;
 }
@@ -269,7 +278,8 @@ export const boxModel: Lesson[] = [
       },
       {
         type: "answer",
-        text: `#child {
+        text: `
+#child {
   margin: 10px 20px 30px 40px;
 }`,
       },
@@ -304,14 +314,16 @@ export const boxModel: Lesson[] = [
       {
         type: "code",
         language: "html",
-        code: `<div id="parent">
+        code: `
+<div id="parent">
   <div id="child"></div>
 </div>`,
       },
       {
         type: "code",
         language: "css",
-        code: `#parent {
+        code: `
+#parent {
   width: 300px;
   border: 1px solid red;
 }
@@ -334,7 +346,8 @@ export const boxModel: Lesson[] = [
       {
         type: "example",
         title: "Порівняння записів",
-        text: `margin: 40px 20px;
+        text: `
+margin: 40px 20px;
 
 те саме, що:
 
@@ -357,7 +370,8 @@ margin-right: 20px;`,
       },
       {
         type: "answer",
-        text: `#child {
+        text: `
+#child {
   margin: 40px 20px;
 }`,
       },
@@ -397,14 +411,16 @@ margin-right: 20px;`,
       {
         type: "code",
         language: "html",
-        code: `<div id="parent">
+        code: `
+<div id="parent">
   <div id="child"></div>
 </div>`,
       },
       {
         type: "code",
         language: "css",
-        code: `#parent {
+        code: `
+#parent {
   width: 300px;
   border: 1px solid red;
 }
@@ -427,7 +443,8 @@ margin-right: 20px;`,
       {
         type: "example",
         title: "Повний запис",
-        text: `margin: 10px 20px 30px;
+        text: `
+margin: 10px 20px 30px;
 
 те саме, що:
 
@@ -450,7 +467,8 @@ margin-left: 20px;`,
       },
       {
         type: "answer",
-        text: `#child {
+        text: `
+#child {
   margin: 10px 20px 30px;
 }`,
       },
@@ -482,14 +500,16 @@ margin-left: 20px;`,
       {
         type: "code",
         language: "html",
-        code: `<div id="elem">
+        code: `
+<div id="elem">
   some long text
 </div>`,
       },
       {
         type: "code",
         language: "css",
-        code: `#elem {
+        code: `
+#elem {
   width: 300px;
   border: 1px solid red;
   text-align: justify;
@@ -4311,6 +4331,5 @@ space-evenly:
 }`,
       },
     ],
-    },
-  
+  },
 ];

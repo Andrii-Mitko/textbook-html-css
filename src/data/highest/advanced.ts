@@ -40,9 +40,10 @@ export const advanced: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `p {
+        code: `
+p {
   letter-spacing: 2px;
-}`,
+ }`,
       },
 
       {
@@ -54,7 +55,8 @@ export const advanced: Lesson[] = [
       {
         type: "code",
         language: "css",
-        code: `/* Збільшити відстань */
+        code: `
+/* Збільшити відстань */
 letter-spacing: 3px;
 
 /* Без змін */
@@ -77,9 +79,10 @@ letter-spacing: -1px;`,
       {
         type: "code",
         language: "css",
-        code: `p {
+        code: `
+p {
   word-spacing: 5px;
-}`,
+ }`,
       },
 
       {
@@ -110,7 +113,8 @@ letter-spacing: -1px;`,
 
       {
         type: "answer",
-        text: `/* №1 */
+        text: `
+/* №1 */
 letter-spacing: 1px;
 
 /* №2 */
@@ -168,20 +172,21 @@ word-spacing: 0;`,
       {
         type: "code",
         language: "css",
-        code: `/* Усі літери великі */
+        code: `
+/* Усі літери великі */
 p {
   text-transform: uppercase;
-}
+ }
 
 /* Усі літери малі */
 p {
   text-transform: lowercase;
-}
+ }
 
 /* Перша літера кожного слова велика */
 p {
   text-transform: capitalize;
-}`,
+ }`,
       },
 
       {
@@ -197,9 +202,10 @@ p {
       {
         type: "code",
         language: "css",
-        code: `p {
+        code: `
+p {
   font-variant: small-caps;
-}`,
+ }`,
       },
 
       {
@@ -234,7 +240,8 @@ p {
 
       {
         type: "answer",
-        text: `/* №1 */
+        text: `
+/* №1 */
 p {
   text-transform: uppercase;
 }
@@ -281,7 +288,8 @@ p {
       {
         type: "code",
         language: "css",
-        code: `p {
+        code: `
+p {
   text-align: justify;
   text-align-last: right;
 }`,
@@ -329,7 +337,8 @@ p {
 
       {
         type: "answer",
-        text: `p {
+        text: `
+p {
   text-align: justify;
   text-align-last: right;
 }`,
@@ -366,7 +375,8 @@ p {
       {
         type: "code",
         language: "css",
-        code: `p::first-letter {
+        code: `
+p::first-letter {
   font-size: 40px;
   font-weight: bold;
   color: red;
@@ -382,7 +392,8 @@ p {
       {
         type: "code",
         language: "html",
-        code: `<p>
+        code: `
+<p>
   Це приклад абзацу, у якому перша літера буде оформлена окремо.
 </p>`,
       },
@@ -412,7 +423,8 @@ p {
 
       {
         type: "answer",
-        text: `p::first-letter {
+        text: `
+p::first-letter {
   font-size: 40px;
   font-weight: bold;
   color: red;
@@ -445,7 +457,8 @@ p {
       {
         type: "code",
         language: "css",
-        code: `p::first-line {
+        code: `
+p::first-line {
   color: red;
   font-weight: bold;
 }`,
@@ -464,7 +477,8 @@ p {
       {
         type: "code",
         language: "html",
-        code: `<p>
+        code: `
+<p>
   Це довгий текст, який займає кілька рядків.
   Перший рядок буде виділений іншим стилем,
   а решта тексту залишиться без змін.
@@ -474,7 +488,8 @@ p {
       {
         type: "code",
         language: "css",
-        code: `p {
+        code: `
+p {
   width: 350px;
   font-size: 18px;
   line-height: 1.5;
@@ -518,7 +533,8 @@ p::first-line {
 
       {
         type: "answer",
-        text: `p::first-line {
+        text: `
+p::first-line {
   color: blue;
   font-size: 24px;
 }`,
@@ -555,7 +571,8 @@ p::first-line {
       {
         type: "code",
         language: "html",
-        code: `<pre>
+        code: `
+<pre>
 Перший рядок
     Другий рядок із відступом
         Третій рядок
@@ -601,7 +618,8 @@ p::first-line {
       {
         type: "code",
         language: "html",
-        code: `<div class="box">
+        code: `
+<div class="box">
 Дуже довгий текст, який не поміщається всередині блоку і продовжується вправо.
 </div>`,
       },
@@ -609,7 +627,8 @@ p::first-line {
       {
         type: "code",
         language: "css",
-        code: `.box {
+        code: `
+.box {
   width: 200px;
   border: 1px solid black;
   white-space: nowrap;
@@ -629,7 +648,8 @@ p::first-line {
       {
         type: "code",
         language: "css",
-        code: `.pre {
+        code: `
+.pre {
   white-space: pre;
 }
 
@@ -669,7 +689,8 @@ p::first-line {
 
       {
         type: "answer",
-        text: `/* №1 */
+        text: `
+/* №1 */
 pre {
 }
 
@@ -728,7 +749,8 @@ pre {
       {
         type: "code",
         language: "css",
-        code: `pre {
+        code: `
+pre {
   tab-size: 4;
 }`,
       },
@@ -751,7 +773,8 @@ pre {
       {
         type: "code",
         language: "html",
-        code: `<pre>
+        code: `
+<pre>
 function hello() {
 \tconsole.log("Hello");
 \tconsole.log("World");
@@ -762,7 +785,8 @@ function hello() {
       {
         type: "code",
         language: "css",
-        code: `pre {
+        code: `
+pre {
   white-space: pre;
   tab-size: 4;
 }`,
@@ -777,7 +801,8 @@ function hello() {
       {
         type: "code",
         language: "css",
-        code: `pre.tab2 {
+        code: `
+pre.tab2 {
   tab-size: 2;
 }
 
@@ -816,7 +841,8 @@ pre.tab8 {
 
       {
         type: "answer",
-        text: `/* №1 */
+        text: `
+/* №1 */
 
 pre {
   white-space: pre;
@@ -883,7 +909,8 @@ pre {
       {
         type: "code",
         language: "html",
-        code: `<div class="box">
+        code: `
+<div class="box">
 Дуже довгий текст, який не поміщається всередині блоку та виходить за його межі.
 </div>`,
       },
@@ -891,7 +918,8 @@ pre {
       {
         type: "code",
         language: "css",
-        code: `.box {
+        code: `
+.box {
   width: 200px;
   height: 200px;
   border: 1px solid black;
@@ -906,7 +934,8 @@ pre {
       {
         type: "code",
         language: "css",
-        code: `.box {
+        code: `
+.box {
   width: 200px;
   height: 200px;
   overflow-y: auto;
@@ -921,7 +950,8 @@ pre {
       {
         type: "code",
         language: "css",
-        code: `.box {
+        code: `
+.box {
   width: 200px;
   height: 200px;
   overflow: hidden;
@@ -941,7 +971,8 @@ pre {
       {
         type: "code",
         language: "css",
-        code: `.box {
+        code: `
+.box {
   overflow-x: hidden;
   overflow-y: auto;
 }`,
@@ -956,7 +987,8 @@ pre {
       {
         type: "code",
         language: "css",
-        code: `.image-box {
+        code: `
+.image-box {
   width: 300px;
   height: 300px;
   overflow: auto;
@@ -995,7 +1027,8 @@ pre {
 
       {
         type: "answer",
-        text: `/* №1 */
+        text: `
+/* №1 */
 .box {
   width: 200px;
   height: 200px;
@@ -1077,7 +1110,8 @@ pre {
       {
         type: "code",
         language: "html",
-        code: `<div class="box">
+        code: `
+<div class="box">
 Дуже довгий текст, який не поміщається всередині блоку.
 </div>`,
       },
@@ -1085,7 +1119,8 @@ pre {
       {
         type: "code",
         language: "css",
-        code: `.box {
+        code: `
+.box {
   width: 200px;
   white-space: nowrap;
   overflow: hidden;
@@ -1203,7 +1238,8 @@ pre {
       {
         type: "code",
         language: "css",
-        code: `.box {
+        code: `
+.box {
   width: 220px;
   overflow-wrap: break-word;
 }`,
@@ -1222,7 +1258,8 @@ pre {
       {
         type: "code",
         language: "css",
-        code: `.box {
+        code: `
+.box {
   width: 220px;
   word-break: break-all;
 }`,
@@ -1251,7 +1288,8 @@ pre {
       {
         type: "code",
         language: "html",
-        code: `<div class="wrap">
+        code: `
+<div class="wrap">
 superhypermegagigalongwordwithoutspacesandbreakpoints
 </div>
 
@@ -1263,7 +1301,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `.wrap {
+        code: `
+.wrap {
   width: 220px;
   border: 1px solid black;
   overflow-wrap: break-word;
@@ -1301,7 +1340,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
 
       {
         type: "answer",
-        text: `/* HTML */
+        text: `
+/* HTML */
 
 <div class="wrap">
 superhypermegagigalongwordwithoutspacesandbreakpoints
@@ -1371,7 +1411,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "html",
-        code: `<div class="text" lang="uk">
+        code: `
+<div class="text" lang="uk">
 Дуже довгий текст із словами, які можуть автоматично переноситися браузером.
 </div>`,
       },
@@ -1379,7 +1420,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `.text {
+        code: `
+.text {
   width: 300px;
   hyphens: auto;
 }`,
@@ -1433,7 +1475,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
 
       {
         type: "answer",
-        text: `<!-- HTML -->
+        text: `
+<!-- HTML -->
 
 <div class="text" lang="uk">
 Дуже довгий текст, який містить слова, що можуть автоматично переноситися браузером.
@@ -1492,7 +1535,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `p {
+        code: `
+p {
   text-decoration-line: underline;
 }`,
       },
@@ -1526,7 +1570,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `p {
+        code: `
+p {
   text-decoration-line: underline;
   text-decoration-style: wavy;
 }`,
@@ -1561,7 +1606,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `p {
+        code: `
+p {
   color: black;
 
   text-decoration-line: underline;
@@ -1578,7 +1624,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "html",
-        code: `<p class="example">
+        code: `
+<p class="example">
   CSS Text Decoration
 </p>`,
       },
@@ -1586,7 +1633,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `.example {
+        code: `
+.example {
   font-size: 28px;
 
   text-decoration-line: underline;
@@ -1627,7 +1675,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
 
       {
         type: "answer",
-        text: `<!-- HTML -->
+        text: `
+<!-- HTML -->
 
 <p class="text">
   CSS Text Decoration
@@ -1690,7 +1739,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `.text {
+        code: `
+.text {
   width: 80%;
   column-width: 300px;
 }`,
@@ -1709,7 +1759,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `.text {
+        code: `
+.text {
   width: 1000px;
   column-count: 4;
 }`,
@@ -1728,7 +1779,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `.text {
+        code: `
+.text {
   columns: 250px 3;
 }`,
       },
@@ -1746,7 +1798,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `.text {
+        code: `
+.text {
   column-count: 4;
   column-gap: 30px;
 }`,
@@ -1765,7 +1818,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `.text {
+        code: `
+.text {
   column-count: 4;
   column-gap: 30px;
   column-rule: 2px dashed gray;
@@ -1785,7 +1839,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "html",
-        code: `<div class="text">
+        code: `
+<div class="text">
   <h2>Заголовок</h2>
 
   <p>...</p>
@@ -1796,7 +1851,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `.text {
+        code: `
+.text {
   column-count: 3;
 }
 
@@ -1814,7 +1870,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `.article {
+        code: `
+.article {
   width: 1000px;
 
   column-count: 3;
@@ -1850,7 +1907,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
 
       {
         type: "answer",
-        text: `<!-- HTML -->
+        text: `
+<!-- HTML -->
 
 <div class="text">
   Довгий текст...
@@ -1908,7 +1966,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "html",
-        code: `<p class="text">
+        code: `
+<p class="text">
   Цей текст не можна виділити.
 </p>`,
       },
@@ -1916,7 +1975,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `.text {
+        code: `
+.text {
   user-select: none;
 }`,
       },
@@ -1948,7 +2008,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "html",
-        code: `<p class="text">
+        code: `
+<p class="text">
   Цей текст не можна копіювати.
 </p>`,
       },
@@ -1960,7 +2021,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
 
       {
         type: "answer",
-        text: `/* HTML */
+        text: `
+/* HTML */
 
 <p class="text">
   Цей текст не можна копіювати.
@@ -1981,8 +2043,9 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "html",
-        code: `<p>
-  <span class="number">1.</span>
+        code: `
+<p>
+ <span class="number">1.</span>
   Перший абзац тексту.
 </p>
 
@@ -2004,7 +2067,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
 
       {
         type: "answer",
-        text: `/* HTML */
+        text: `
+/* HTML */
 
 <p>
   <span class="number">1.</span>
@@ -2072,7 +2136,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "html",
-        code: `<button class="btn">
+        code: `
+<button class="btn">
   Натиснути
 </button>`,
       },
@@ -2080,7 +2145,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `.btn {
+        code: `
+.btn {
   padding: 10px 20px;
   font-size: 16px;
 
@@ -2134,7 +2200,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
 
       {
         type: "answer",
-        text: `button {
+        text: `
+button {
   pointer-events: none;
 }`,
       },
@@ -2184,13 +2251,17 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "html",
-        code: `<a href="#">Посилання</a>`,
+        code: `
+  <a href="#">
+  Посилання
+  </a>`,
       },
 
       {
         type: "code",
         language: "css",
-        code: `a {
+        code: `
+a {
   cursor: not-allowed;
 }`,
       },
@@ -2214,7 +2285,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `a.disabled {
+        code: `
+a.disabled {
   pointer-events: none;
   cursor: not-allowed;
   color: gray;
@@ -2246,7 +2318,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
 
       {
         type: "answer",
-        text: `<!-- HTML -->
+        text: `
+<!-- HTML -->
 <span class="disabled">
   <a href="#">Недоступне посилання</a>
 </span>
@@ -2294,7 +2367,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `::selection {
+        code: `
+::selection {
   background-color: royalblue;
   color: white;
 }`,
@@ -2319,7 +2393,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "html",
-        code: `<p class="text">
+        code: `
+<p class="text">
   Виділіть цей текст.
 </p>`,
       },
@@ -2327,7 +2402,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `.text::selection {
+        code: `
+.text::selection {
   background-color: orange;
   color: black;
 }`,
@@ -2359,7 +2435,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
 
       {
         type: "answer",
-        text: `::selection {
+        text: `
+::selection {
   background-color: royalblue;
   color: white;
 }`,
@@ -2409,7 +2486,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "html",
-        code: `<table>
+        code: `
+<table>
   <tr>
     <td>1</td>
     <td>2</td>
@@ -2424,7 +2502,8 @@ superhypermegagigalongwordwithoutspacesandbreakpoints
       {
         type: "code",
         language: "css",
-        code: `table {
+        code: `
+table {
   border: 2px solid black;
 }
 
@@ -2448,7 +2527,8 @@ td {
       {
         type: "code",
         language: "css",
-        code: `table {
+        code: `
+table {
   border-collapse: collapse;
   border: 2px solid black;
 }
@@ -2491,7 +2571,8 @@ td {
 
       {
         type: "answer",
-        text: `table {
+        text: `
+table {
   border-collapse: collapse;
   border: 2px solid black;
 }
@@ -2533,7 +2614,8 @@ td {
       {
         type: "code",
         language: "css",
-        code: `table {
+        code: `
+table {
   border-spacing: 20px;
 }`,
       },
@@ -2554,7 +2636,8 @@ td {
       {
         type: "code",
         language: "html",
-        code: `<table>
+        code: `
+<table>
   <tr>
     <td>1</td>
     <td>2</td>
@@ -2572,7 +2655,8 @@ td {
       {
         type: "code",
         language: "css",
-        code: `table {
+        code: `
+table {
   border-spacing: 15px;
 }
 
@@ -2596,7 +2680,8 @@ td {
       {
         type: "code",
         language: "css",
-        code: `table {
+        code: `
+table {
   border-spacing: 30px 10px;
 }`,
       },
@@ -2642,7 +2727,8 @@ td {
 
       {
         type: "answer",
-        text: `table {
+        text: `
+table {
   border-spacing: 20px;
 }
 
@@ -2696,7 +2782,8 @@ td {
       {
         type: "code",
         language: "html",
-        code: `<table>
+        code: `
+<table>
   <tr>
     <td>1</td>
     <td></td>
@@ -2719,7 +2806,8 @@ td {
       {
         type: "code",
         language: "css",
-        code: `table {
+        code: `
+table {
   empty-cells: show;
 }
 
@@ -2743,7 +2831,9 @@ td {
       {
         type: "code",
         language: "css",
-        code: `table {
+        code: `
+        
+table {
   empty-cells: hide;
 }
 
@@ -2796,7 +2886,8 @@ td {
 
       {
         type: "answer",
-        text: `table {
+        text: `
+table {
   empty-cells: hide;
   border-collapse: separate;
 }
@@ -2853,7 +2944,8 @@ td {
       {
         type: "code",
         language: "html",
-        code: `<table>
+        code: `
+<table>
   <tr>
     <td>Текст 1</td>
     <td>Текст 2</td>
@@ -2870,7 +2962,8 @@ td {
       {
         type: "code",
         language: "css",
-        code: `table {
+        code: `
+table {
   width: 400px;
   height: 200px;
 }
@@ -2895,7 +2988,8 @@ td {
       {
         type: "code",
         language: "css",
-        code: `td {
+        code: `
+td {
   border: 1px solid black;
   vertical-align: middle;
 }`,
@@ -2915,7 +3009,8 @@ td {
       {
         type: "code",
         language: "css",
-        code: `td {
+        code: `
+td {
   border: 1px solid black;
   vertical-align: bottom;
 }`,
@@ -2951,7 +3046,8 @@ td {
 
       {
         type: "answer",
-        text: `table {
+        text: `
+table {
   width: 400px;
   height: 200px;
 }
@@ -3006,7 +3102,8 @@ td {
       {
         type: "code",
         language: "html",
-        code: `<table>
+        code: `
+<table>
   <tr>
     <td>Короткий текст</td>
     <td>
@@ -3024,7 +3121,8 @@ td {
       {
         type: "code",
         language: "css",
-        code: `table {
+        code: `
+table {
   width: 500px;
   table-layout: auto;
   border-collapse: collapse;
@@ -3050,7 +3148,8 @@ td {
       {
         type: "code",
         language: "css",
-        code: `table {
+        code: `
+table {
   width: 500px;
   table-layout: fixed;
   border-collapse: collapse;
@@ -3106,7 +3205,8 @@ td {
 
       {
         type: "answer",
-        text: `table {
+        text: `
+table {
   width: 500px;
   table-layout: fixed;
   border-collapse: collapse;
@@ -3158,7 +3258,8 @@ td {
       {
         type: "code",
         language: "html",
-        code: `<ul>
+        code: `
+<ul>
   <li>HTML</li>
   <li>CSS</li>
   <li>JavaScript</li>
@@ -3168,7 +3269,8 @@ td {
       {
         type: "code",
         language: "css",
-        code: `li::after {
+        code: `
+li::after {
   content: ".";
 }`,
       },
@@ -3192,7 +3294,8 @@ td {
       {
         type: "code",
         language: "html",
-        code: `<p>
+        code: `
+<p>
   <span>Текст</span>
   <span>Другий текст</span>
 </p>`,
@@ -3201,7 +3304,8 @@ td {
       {
         type: "code",
         language: "css",
-        code: `span {
+        code: `
+span {
   position: relative;
 }
 
@@ -3238,7 +3342,8 @@ span::after {
       {
         type: "code",
         language: "css",
-        code: `/* Завдання 1 */
+        code: `
+/* Завдання 1 */
 
 li::after {
   content: ".";
@@ -3269,7 +3374,8 @@ span::after {
 
       {
         type: "answer",
-        text: `<ul>
+        text: `
+<ul>
   <li>HTML</li>
   <li>CSS</li>
   <li>JavaScript</li>
@@ -3336,7 +3442,8 @@ span::after {
       {
         type: "code",
         language: "css",
-        code: `.list {
+        code: `
+.list {
   counter-reset: item;
 }
 
@@ -3352,7 +3459,8 @@ span::after {
       {
         type: "code",
         language: "html",
-        code: `<ul class="list">
+        code: `
+<ul class="list">
   <li>HTML</li>
   <li>CSS</li>
   <li>JavaScript</li>
@@ -3368,7 +3476,8 @@ span::after {
       {
         type: "code",
         language: "text",
-        code: `1. HTML
+        code: `
+1. HTML
 2. CSS
 3. JavaScript`,
       },
@@ -3386,7 +3495,8 @@ span::after {
       {
         type: "code",
         language: "css",
-        code: `body {
+        code: `
+body {
   counter-reset: section;
 }
 
@@ -3402,7 +3512,8 @@ h2::before {
       {
         type: "code",
         language: "html",
-        code: `<h2>Встановлення HTML</h2>
+        code: `
+<h2>Встановлення HTML</h2>
 <h2>Основи CSS</h2>
 <h2>Робота з JavaScript</h2>`,
       },
@@ -3420,7 +3531,8 @@ h2::before {
       {
         type: "code",
         language: "css",
-        code: `h2::before {
+        code: `
+h2::before {
   content: "№" counter(section) " ";
 }`,
       },
@@ -3434,7 +3546,8 @@ h2::before {
       {
         type: "code",
         language: "text",
-        code: `№1 Встановлення HTML
+        code: `
+№1 Встановлення HTML
 №2 Основи CSS
 №3 Робота з JavaScript`,
       },
@@ -3460,7 +3573,8 @@ h2::before {
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код -->
+        code: `
+<!-- Початковий код -->
 
 <h2>Перший розділ</h2>
 <h2>Другий розділ</h2>
@@ -3474,7 +3588,8 @@ h2::before {
 
       {
         type: "answer",
-        text: `body {
+        text: `
+body {
   counter-reset: title;
 }
 
@@ -3513,7 +3628,8 @@ h2::before {
       {
         type: "code",
         language: "css",
-        code: `.element::after {
+        code: `
+.element::after {
   content: attr(data-text);
 }`,
       },
@@ -3531,7 +3647,8 @@ h2::before {
       {
         type: "code",
         language: "html",
-        code: `<p data-info="Додатковий текст">
+        code: `
+<p data-info="Додатковий текст">
   Основний текст
 </p>`,
       },
@@ -3539,7 +3656,8 @@ h2::before {
       {
         type: "code",
         language: "css",
-        code: `p::after {
+        code: `
+p::after {
   content: attr(data-info);
   color: gray;
 }`,
@@ -3554,7 +3672,8 @@ h2::before {
       {
         type: "code",
         language: "html",
-        code: `<p>
+        code: `
+<p>
   Перейти на
   <a href="https://example.com">
     сайт
@@ -3565,7 +3684,8 @@ h2::before {
       {
         type: "code",
         language: "css",
-        code: `a:hover::after {
+        code: `
+a:hover::after {
   content: attr(href);
   margin-left: 10px;
   color: gray;
@@ -3599,7 +3719,8 @@ h2::before {
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код -->
+        code: `
+<!-- Початковий код -->
 
 <p>
   Документація:
@@ -3623,7 +3744,8 @@ h2::before {
 
       {
         type: "answer",
-        text: `a:hover::after {
+        text: `
+a:hover::after {
   content: " (" attr(href) ")";
   margin-left: 5px;
   color: gray;
@@ -3656,7 +3778,8 @@ h2::before {
       {
         type: "code",
         language: "css",
-        code: `.block {
+        code: `
+.block {
   width: calc(100% - 100px);
 }`,
       },
@@ -3675,7 +3798,8 @@ h2::before {
       {
         type: "code",
         language: "html",
-        code: `<div class="block">
+        code: `
+  <div class="block">
   Блок
 </div>`,
       },
@@ -3683,7 +3807,8 @@ h2::before {
       {
         type: "code",
         language: "css",
-        code: `.block {
+        code: `
+.block {
   width: calc(100% - 100px);
   height: 100px;
   background-color: lightblue;
@@ -3703,7 +3828,8 @@ h2::before {
       {
         type: "code",
         language: "css",
-        code: `.container {
+        code: `
+.container {
   width: calc(50% + 200px);
 }`,
       },
@@ -3733,7 +3859,8 @@ h2::before {
       {
         type: "code",
         language: "html",
-        code: `<div class="block">
+        code: `
+<div class="block">
   Block
 </div>`,
       },
@@ -3745,7 +3872,8 @@ h2::before {
 
       {
         type: "answer",
-        text: `.block {
+        text: `
+.block {
   width: calc(100% - 100px);
 }`,
       },
@@ -3762,7 +3890,8 @@ h2::before {
       {
         type: "code",
         language: "html",
-        code: `<div class="block">
+        code: `
+<div class="block">
   Block
 </div>`,
       },
@@ -3774,7 +3903,8 @@ h2::before {
 
       {
         type: "answer",
-        text: `.block {
+        text: `
+.block {
   width: calc(50% + 200px);
 }`,
       },
@@ -3818,7 +3948,8 @@ h2::before {
       {
         type: "code",
         language: "css",
-        code: `.block {
+        code: `
+  .block {
   width: max(300px, 50%);
 }`,
       },
@@ -3837,7 +3968,8 @@ h2::before {
       {
         type: "code",
         language: "html",
-        code: `<div class="block">
+        code: `
+<div class="block">
   Block
 </div>`,
       },
@@ -3845,7 +3977,8 @@ h2::before {
       {
         type: "code",
         language: "css",
-        code: `.block {
+        code: `
+.block {
   width: max(300px, 50%);
   height: 100px;
   background-color: lightblue;
@@ -3895,7 +4028,8 @@ h2::before {
       {
         type: "code",
         language: "html",
-        code: `<div class="block">
+        code: `
+<div class="block">
   Block
 </div>`,
       },
@@ -3907,7 +4041,8 @@ h2::before {
 
       {
         type: "answer",
-        text: `.block {
+        text: `
+.block {
   width: max(300px, 50%);
 }`,
       },
@@ -3924,7 +4059,8 @@ h2::before {
       {
         type: "code",
         language: "html",
-        code: `<div class="block">
+        code: `
+<div class="block">
   Block
 </div>`,
       },
@@ -3936,7 +4072,8 @@ h2::before {
 
       {
         type: "answer",
-        text: `.block {
+        text: `
+.block {
   width: min(400px, 30%);
 }`,
       },

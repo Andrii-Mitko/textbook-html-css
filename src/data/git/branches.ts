@@ -282,7 +282,8 @@ git branch
 
       {
         type: "diagram",
-        text: `main
+        text: `
+main
  │
  └── test
 
@@ -354,7 +355,8 @@ main
 
       {
         type: "answer",
-        text: `Відповідь:
+        text: `
+Відповідь:
 
 Створити нову гілку:
 
@@ -408,7 +410,8 @@ git branch feature-login
       {
         type: "code",
         language: "text",
-        code: `* master
+        code: `
+* master
   test`,
       },
 
@@ -420,7 +423,8 @@ git branch feature-login
       {
         type: "code",
         language: "text",
-        code: `* main
+        code: `
+* main
   test`,
       },
 
@@ -460,7 +464,8 @@ git branch feature-login
 
       {
         type: "answer",
-        text: `Відповідь:
+        text: `
+Відповідь:
 
 Переглянути список гілок:
 
@@ -546,7 +551,8 @@ git branch
 
       {
         type: "diagram",
-        text: `main
+        text: `
+main
 
 index.html
 style.css
