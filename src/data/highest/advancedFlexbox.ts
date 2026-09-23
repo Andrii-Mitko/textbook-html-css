@@ -2879,7 +2879,13 @@ width: 100px;
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child elem1">1</div> <div class="child elem2">2</div> <div class="child elem3">3</div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="parent">
+  <div class="child elem1">1</div>
+  <div class="child elem2">2</div>
+  <div class="child elem3">3</div>
+</div>`,
       },
       {
         type: "hint",
@@ -2887,7 +2893,31 @@ width: 100px;
       },
       {
         type: "answer",
-        text: `.parent { display: flex; width: 200px; } .child { height: 50px; border: 1px solid green; } .elem1 { width: 100px; flex-shrink: 3; } .elem2 { width: 100px; flex-shrink: 2; } .elem3 { width: 100px; flex-shrink: 1; }`,
+        text: `
+.parent {
+  display: flex;
+  width: 200px;
+}
+  
+.child {
+  height: 50px;
+  border: 1px solid green;
+}
+  
+.elem1 {
+  width: 100px;
+  flex-shrink: 3;
+}
+  
+.elem2 {
+  width: 100px;
+  flex-shrink: 2;
+}
+  
+.elem3 {
+  width: 100px;
+  flex-shrink: 1;
+}`,
       },
       {
         type: "example",
@@ -2911,7 +2941,14 @@ width: 100px;
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child elem1">1</div> <div class="child elem2">2</div> <div class="child elem3">3</div> <div class="child elem4">4</div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="parent">
+  <div class="child elem1">1</div>
+  <div class="child elem2">2</div>
+  <div class="child elem3">3</div>
+  <div class="child elem4">4</div>
+</div>`,
       },
       {
         type: "hint",
@@ -2919,7 +2956,36 @@ width: 100px;
       },
       {
         type: "answer",
-        text: `.parent { display: flex; width: 500px; } .child { height: 50px; border: 1px solid green; } .elem1 { width: 300px; flex-shrink: 3; } .elem2 { width: 200px; flex-shrink: 2; } .elem3 { width: 200px; flex-shrink: 1; } .elem4 { width: 200px; flex-shrink: 1; }`,
+        text: `
+.parent {
+  display: flex;
+  width: 500px;
+}
+  
+.child {
+  height: 50px;
+  border: 1px solid green;
+}
+  
+.elem1 {
+  width: 300px;
+  flex-shrink: 3;
+}
+  
+.elem2 {
+  width: 200px;
+  flex-shrink: 2;
+}
+  
+.elem3 {
+  width: 200px;
+  flex-shrink: 1;
+}
+  
+.elem4 {
+  width: 200px;
+  flex-shrink: 1;
+}`,
       },
       {
         type: "example",
@@ -2947,7 +3013,15 @@ width: 100px;
       {
         type: "code",
         language: "css",
-        code: `.container { display: flex; width: 300px; } .item { width: 150px; }`,
+        code: `
+.container {
+  display: flex;
+  width: 300px;
+}
+  
+.item {
+  width: 150px;
+}`,
       },
       {
         type: "example",
@@ -2962,7 +3036,11 @@ width: 100px;
       {
         type: "code",
         language: "css",
-        code: `.item { width: 150px; flex-shrink: 0; }`,
+        code: `
+.item {
+  width: 150px;
+  flex-shrink: 0;
+}`,
       },
       {
         type: "example",
@@ -2986,7 +3064,18 @@ width: 100px;
       {
         type: "code",
         language: "css",
-        code: `.item:nth-child(1) { flex-shrink: 1; } .item:nth-child(2) { flex-shrink: 0.5; } .item:nth-child(3) { flex-shrink: 2; }`,
+        code: `
+.item:nth-child(1) {
+  flex-shrink: 1;
+}
+  
+.item:nth-child(2) {
+  flex-shrink: 0.5;
+}
+  
+.item:nth-child(3) {
+  flex-shrink: 2;
+}`,
       },
       {
         type: "example",
@@ -3010,7 +3099,13 @@ width: 100px;
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="container"> <div class="item">1</div> <div class="item item--no-shrink">2</div> <div class="item">3</div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="container">
+  <div class="item">1</div>
+  <div class="item item--no-shrink">2</div>
+  <div class="item">3</div>
+</div>`,
       },
       {
         type: "hint",
@@ -3018,7 +3113,19 @@ width: 100px;
       },
       {
         type: "answer",
-        text: `.container { display: flex; width: 300px; } .item { width: 150px; flex-shrink: 1; } .item--no-shrink { flex-shrink: 0; }`,
+        text: `
+.container {
+  display: flex; width: 300px;
+}
+  
+.item {
+  width: 150px;
+  flex-shrink: 1;
+}
+  
+.item--no-shrink {
+  flex-shrink: 0;
+}`,
       },
       {
         type: "task",
@@ -3031,7 +3138,13 @@ width: 100px;
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="container"> <div class="item item--one">1</div> <div class="item item--two">2</div> <div class="item item--three">3</div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="container">
+  <div class="item item--one">1</div>
+  <div class="item item--two">2</div>
+  <div class="item item--three">3</div>
+</div>`,
       },
       {
         type: "hint",
@@ -3039,7 +3152,25 @@ width: 100px;
       },
       {
         type: "answer",
-        text: `.container { display: flex; width: 300px; } .item { width: 150px; } .item--one { flex-shrink: 1; } .item--two { flex-shrink: 0.5; } .item--three { flex-shrink: 2; }`,
+        text: `
+.container {
+  display: flex; width: 300px;
+}
+  
+.item {
+  width: 150px;
+}
+  
+.item--one {
+  flex-shrink: 1;
+}
+.item--two {
+  flex-shrink: 0.5;
+}
+  
+.item--three {
+  flex-shrink: 2;
+}`,
       },
     ],
   },
@@ -3058,13 +3189,25 @@ width: 100px;
       {
         type: "code",
         language: "css",
-        code: `.child { flex-grow: 1; flex-shrink: 2; flex-basis: 100px; }`,
+        code: `
+.child {
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 100px;
+}`,
       },
       {
         type: "paragraph",
         text: "Той самий запис можна скоротити до однієї властивості flex. Порядок значень завжди такий: flex-grow, flex-shrink, flex-basis.",
       },
-      { type: "code", language: "css", code: `.child { flex: 1 2 100px; }` },
+      {
+        type: "code",
+        language: "css",
+        code: `
+.child { 
+  flex: 1 2 100px; 
+}`,
+      },
       {
         type: "list",
         items: [
@@ -3081,7 +3224,18 @@ width: 100px;
       {
         type: "code",
         language: "css",
-        code: `.child { flex: 2; } .child { flex: 2 0.5; } .child { flex: 2 0.5 100px; }`,
+        code: `
+.child {
+  flex: 2;
+}
+  
+.child {
+  flex: 2 0.5;
+}
+  
+.child {
+  flex: 2 0.5 100px;
+}`,
       },
       {
         type: "example",
@@ -3100,7 +3254,16 @@ width: 100px;
       {
         type: "code",
         language: "css",
-        code: `.child { flex-grow: 1; flex-shrink: 2; flex-basis: 100px; } /* Скорочено */ .child { flex: 1 2 100px; }`,
+        code: `
+.child {
+   flex-grow: 1;
+   flex-shrink: 2;
+   flex-basis: 100px;
+}
+   /* Скорочено */
+.child {
+  flex: 1 2 100px;
+  }`,
       },
       {
         type: "paragraph",
@@ -3109,7 +3272,16 @@ width: 100px;
       {
         type: "code",
         language: "css",
-        code: `.child { flex-grow: 2; flex-shrink: 0.5; } /* Скорочено */ .child { flex: 2 0.5; }`,
+        code: `
+.child {
+  flex-grow: 2;
+  flex-shrink: 0.5;
+}
+  
+/* Скорочено */
+.child {
+  flex: 2 0.5;
+}`,
       },
       {
         type: "paragraph",
@@ -3118,7 +3290,17 @@ width: 100px;
       {
         type: "code",
         language: "css",
-        code: `.child { flex: 3; } /* Еквівалентно */ .child { flex-grow: 3; flex-shrink: 1; flex-basis: 0%; }`,
+        code: `
+.child {
+  flex: 3;
+}
+  
+/* Еквівалентно */
+.child {
+  flex-grow: 3;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}`,
       },
       { type: "heading", text: "Практичні завдання" },
       {
@@ -3131,13 +3313,24 @@ width: 100px;
       {
         type: "code",
         language: "css",
-        code: `.child { flex-basis: 100px; flex-grow: 1; flex-shrink: 2; }`,
+        code: `
+.child {
+  flex-basis: 100px;
+  flex-grow: 1;
+  flex-shrink: 2;
+}`,
       },
       {
         type: "hint",
         text: "Запишіть значення в порядку flex-grow, flex-shrink, flex-basis.",
       },
-      { type: "answer", text: `.child { flex: 1 2 100px; }` },
+      {
+        type: "answer",
+        text: `
+.child { 
+  flex: 1 2 100px; 
+}`,
+      },
       {
         type: "task",
         text: [
@@ -3148,10 +3341,20 @@ width: 100px;
       {
         type: "code",
         language: "css",
-        code: `.child { flex-shrink: 0.5; flex-grow: 2; }`,
+        code: `
+.child {
+  flex-shrink: 0.5;
+  flex-grow: 2;
+}`,
       },
       { type: "hint", text: "Спочатку запишіть flex-grow, потім flex-shrink." },
-      { type: "answer", text: `.child { flex: 2 0.5; }` },
+      {
+        type: "answer",
+        text: `
+.child { 
+  flex: 2 0.5; 
+}`,
+      },
       {
         type: "task",
         text: [
@@ -3162,25 +3365,47 @@ width: 100px;
       {
         type: "code",
         language: "css",
-        code: `.child { flex-shrink: 0.5; flex-grow: 1; }`,
+        code: `
+.child {
+  flex-shrink: 0.5;
+  flex-grow: 1;
+}`,
       },
       {
         type: "hint",
         text: "Порядок властивостей у початковому коді не має значення. У flex спочатку записується grow, потім shrink.",
       },
-      { type: "answer", text: `.child { flex: 1 0.5; }` },
+      {
+        type: "answer",
+        text: `
+.child { 
+  flex: 1 0.5; 
+}`,
+      },
       {
         type: "task",
         text: ["Розгорніть скорочений запис flex у три окремі властивості."],
       },
-      { type: "code", language: "css", code: `.child { flex: 1 2 200px; }` },
+      {
+        type: "code",
+        language: "css",
+        code: `
+.child { 
+  flex: 1 2 200px; 
+}`,
+      },
       {
         type: "hint",
         text: "Перше значення — grow, друге — shrink, третє — basis.",
       },
       {
         type: "answer",
-        text: `.child { flex-grow: 1; flex-shrink: 2; flex-basis: 200px; }`,
+        text: `
+.child {
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 200px;
+}`,
       },
       {
         type: "task",
@@ -3189,14 +3414,26 @@ width: 100px;
           "Пам'ятайте, що два числові значення означають grow і shrink.",
         ],
       },
-      { type: "code", language: "css", code: `.child { flex: 2 0.7; }` },
+      {
+        type: "code",
+        language: "css",
+        code: `
+.child {
+  flex: 2 0.7; 
+}`,
+      },
       {
         type: "hint",
         text: "Перше число — flex-grow, друге — flex-shrink. Для такого скороченого запису flex-basis дорівнює 0%.",
       },
       {
         type: "answer",
-        text: `.child { flex-grow: 2; flex-shrink: 0.7; flex-basis: 0%; }`,
+        text: `
+.child {
+  flex-grow: 2;
+  flex-shrink: 0.7;
+  flex-basis: 0%;
+}`,
       },
       {
         type: "task",
@@ -3205,14 +3442,26 @@ width: 100px;
           "Врахуйте спеціальні правила скороченого запису flex з одним числом.",
         ],
       },
-      { type: "code", language: "css", code: `.child { flex: 3; }` },
+      {
+        type: "code",
+        language: "css",
+        code: `
+.child { 
+  flex: 3; 
+}`,
+      },
       {
         type: "hint",
         text: "Одне число задає flex-grow. Для такого запису flex-shrink стає 1, а flex-basis — 0%.",
       },
       {
         type: "answer",
-        text: `.child { flex-grow: 3; flex-shrink: 1; flex-basis: 0%; }`,
+        text: `
+.child {
+  flex-grow: 3;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}`,
       },
     ],
   },
@@ -3231,12 +3480,36 @@ width: 100px;
       {
         type: "code",
         language: "html",
-        code: `<div class="parent"> <div class="child">1</div> <div class="child">2</div> <div class="child">3</div> <div class="child">4</div> <div class="child">5</div> <div class="child">6</div> <div class="child">7</div> <div class="child">8</div> <div class="child">9</div> </div>`,
+        code: `
+<div class="parent">
+  <div class="child">1</div>
+  <div class="child">2</div>
+  <div class="child">3</div>
+  <div class="child">4</div>
+  <div class="child">5</div>
+  <div class="child">6</div>
+  <div class="child">7</div>
+  <div class="child">8</div>
+  <div class="child">9</div>
+</div>`,
       },
       {
         type: "code",
         language: "css",
-        code: `.parent { display: flex; flex-wrap: wrap; width: 300px; border: 1px solid red; } .child { box-sizing: border-box; width: 100px; height: 100px; border: 1px solid green; }`,
+        code: `
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  border: 1px solid red;
+}
+  
+.child {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border: 1px solid green;
+}`,
       },
       {
         type: "example",
@@ -3255,7 +3528,21 @@ width: 100px;
       {
         type: "code",
         language: "css",
-        code: `.parent { display: flex; flex-wrap: wrap; justify-content: space-between; width: 320px; border: 1px solid red; } .child { box-sizing: border-box; width: 100px; height: 100px; border: 1px solid green; }`,
+        code: `
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 320px;
+  border: 1px solid red;
+}
+  
+.child {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border: 1px solid green;
+}`,
       },
       {
         type: "example",
@@ -3274,7 +3561,23 @@ width: 100px;
       {
         type: "code",
         language: "css",
-        code: `.parent { display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-between; width: 320px; height: 320px; border: 1px solid red; } .child { box-sizing: border-box; width: 100px; height: 100px; border: 1px solid green; }`,
+        code: `
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 320px;
+  height: 320px;
+  border: 1px solid red;
+}
+  
+.child {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border: 1px solid green;
+}`,
       },
       {
         type: "example",
@@ -3312,7 +3615,19 @@ width: 100px;
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child">1</div> <div class="child">2</div> <div class="child">3</div> <div class="child">4</div> <div class="child">5</div> <div class="child">6</div> <div class="child">7</div> <div class="child">8</div> <div class="child">9</div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="parent">
+  <div class="child">1</div>
+  <div class="child">2</div>
+  <div class="child">3</div>
+  <div class="child">4</div>
+  <div class="child">5</div>
+  <div class="child">6</div>
+  <div class="child">7</div>
+  <div class="child">8</div>
+  <div class="child">9</div>
+</div>`,
       },
       {
         type: "hint",
@@ -3320,7 +3635,21 @@ width: 100px;
       },
       {
         type: "answer",
-        text: `.parent { display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-between; width: 320px; height: 320px; } .child { box-sizing: border-box; width: 100px; height: 100px; }`,
+        text: `
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 320px;
+  height: 320px;
+}
+  
+.child {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+}`,
       },
       {
         type: "task",
@@ -3333,7 +3662,19 @@ width: 100px;
       {
         type: "code",
         language: "html",
-        code: `<!-- Початковий код --> <div class="parent"> <div class="child">1</div> <div class="child">2</div> <div class="child">3</div> <div class="child">4</div> <div class="child">5</div> <div class="child">6</div> <div class="child">7</div> <div class="child">8</div> <div class="child">9</div> </div>`,
+        code: `
+        <!-- Початковий код -->
+<div class="parent">
+  <div class="child">1</div>
+  <div class="child">2</div>
+  <div class="child">3</div>
+  <div class="child">4</div>
+  <div class="child">5</div>
+  <div class="child">6</div>
+  <div class="child">7</div>
+  <div class="child">8</div>
+  <div class="child">9</div>
+</div>`,
       },
       {
         type: "hint",
@@ -3341,7 +3682,21 @@ width: 100px;
       },
       {
         type: "answer",
-        text: `.parent { display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-between; width: 260px; height: 260px; } .child { box-sizing: border-box; width: 80px; height: 80px; }`,
+        text: `
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 260px;
+  height: 260px;
+}
+  
+.child {
+  box-sizing: border-box;
+   width: 80px;
+   height: 80px;
+}`,
       },
     ],
   },
@@ -3360,7 +3715,15 @@ width: 100px;
       {
         type: "code",
         language: "css",
-        code: `.parent { display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-between; width: 320px; height: 320px; }`,
+        code: `
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 320px;
+  height: 320px;
+}`,
       },
       {
         type: "paragraph",
