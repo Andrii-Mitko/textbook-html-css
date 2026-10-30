@@ -1,60 +1,37 @@
-# HTML & CSS Textbook
+# WebBook — онлайн-навчальник веброзробки
 
-A web-based learning project focused on HTML and CSS, built with Next.js, React, and TypeScript.
+Інтерактивний навчальний посібник з Git, HTML та CSS українською мовою. Практичні уроки з прикладами
+для майбутніх веброзробників.
 
-## Live Demo
+🔗 **Демо:** [textbook-html-css.vercel.app](https://textbook-html-css.vercel.app/)
 
-[https://textbook-html-css.vercel.app/](https://textbook-html-css.vercel.app/)
+## Зміст
 
-## Tech Stack
+| Розділ                  | Опис                                                                           | Уроків |
+| ----------------------- | ------------------------------------------------------------------------------ | ------ |
+| 🌿 Git                  | Налаштування, коміти, гілки, віддалені репозиторії                             | 65     |
+| 📄 Основи HTML+CSS      | Теги, селектори, блочна модель, flex, grid, позиціонування, float, макети      | 239    |
+| 🚀 Поглиблений HTML+CSS | Типографіка, форми, графіка, ефекти, кросбраузерність, одиниці виміру, Flexbox | 104    |
+
+Розділи «Розширені можливості роботи з Grid» та «Адаптивне верстання» — у розробці.
+
+## Технології
 
 - Next.js 16
 - React 19
 - TypeScript
-- HTML5
-- CSS3
+- HTML5, CSS3
 
-## Getting Started
+## Деплой
 
-### 1. Clone the repository
+Проєкт розгортається на [Vercel](https://vercel.com/).
 
-```bash
-git clone https://github.com/Andrii-Mitko/textbook-html-css.git
-```
-
-### 2. Navigate to the project directory
-
-```bash
-cd textbook-html-css
-```
-
-### 3. Install dependencies
-
-```bash
-npm install
-```
-
-### 4. Start the development server
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Available Scripts
-
-| Command         | Description                           |
-| --------------- | ------------------------------------- |
-| `npm run dev`   | Starts the development server         |
-| `npm run build` | Builds the application for production |
-| `npm run start` | Starts the production server          |
-| `npm run lint`  | Runs ESLint                           |
-
-## Author
+## Автор
 
 **Andrii Mitko** — Full Stack JavaScript Developer
 
-- Portfolio: [andrii-mitko-brand.vercel.app](https://andrii-mitko-brand.vercel.app/)
+- Портфоліо: [andrii-mitko-brand.vercel.app](https://andrii-mitko-brand.vercel.app/)
 - GitHub: [@Andrii-Mitko](https://github.com/Andrii-Mitko)
 - LinkedIn: [andrii-mitko](https://www.linkedin.com/in/andrii-mitko/)
+
+© 2026 Andrii Mitko. Усі права захищені.

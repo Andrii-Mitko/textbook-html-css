@@ -3221,7 +3221,7 @@ td {
   },
   {
     id: "css-pseudo-elements-before-after",
-    title: "Вставка псевдоэлементів у CSS",
+    title: "Вставка псевдоeлементів у CSS",
     description:
       "Вивчаємо псевдоелементи ::before і ::after, властивість content та створення додаткових елементів через CSS.",
 

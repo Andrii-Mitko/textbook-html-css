@@ -1,7 +1,10 @@
-import { tutorialsData } from "@/data/tutorialsData";
-import { notFound } from "next/navigation";
-import Link from "next/link";
-import css from "./page.module.css";
+import type { Metadata } from 'next';
+import { tutorialsData } from '@/data/tutorialsData';
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import css from './page.module.css';
+
+type TutorialId = keyof typeof tutorialsData;
 
 interface Props {
   params: Promise<{
@@ -9,46 +12,66 @@ interface Props {
   }>;
 }
 
+// Type guard: захищає від ключів з прототипу (constructor, toString тощо)
+const isTutorialId = (id: string): id is TutorialId => Object.hasOwn(tutorialsData, id);
+
+export function generateStaticParams() {
+  return Object.keys(tutorialsData).map(id => ({ id }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params;
+
+  if (!isTutorialId(id)) {
+    return {};
+  }
+
+  const { title, sections } = tutorialsData[id];
+
+  const lessonsCount = sections.reduce((total, section) => total + section.lessons.length, 0);
+
+  const description = `${title}: ${lessonsCount} уроків з прикладами та практичними завданнями.`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: `/tutorials/${id}` },
+    openGraph: { title, description, url: `/tutorials/${id}` },
+  };
+}
+
 export default async function TutorialPage({ params }: Props) {
   const { id } = await params;
 
-  const tutorial = tutorialsData[id as keyof typeof tutorialsData];
-
-  if (!tutorial) {
+  if (!isTutorialId(id)) {
     notFound();
   }
 
-  const sections = tutorial.sections.map((section, sectionIndex) => {
-    const previousLessonsCount = tutorial.sections
-      .slice(0, sectionIndex)
-      .reduce((total, currentSection) => {
-        return total + currentSection.lessons.length;
-      }, 0);
+  const tutorial = tutorialsData[id];
 
-    return {
+  let lessonCounter = 0;
+
+  const sections = tutorial.sections
+    .filter(section => section.lessons.length > 0)
+    .map(section => ({
       ...section,
-      lessons: section.lessons.map((lesson, lessonIndex) => ({
+      lessons: section.lessons.map(lesson => ({
         ...lesson,
-        number: previousLessonsCount + lessonIndex + 1,
+        number: ++lessonCounter,
       })),
-    };
-  });
+    }));
 
   return (
-    <main className={css.page}>
+    <div className={css.page}>
       <h1 className={css.title}>{tutorial.title}</h1>
 
-      {sections.map((section) => (
+      {sections.map(section => (
         <section key={section.id} className={css.section}>
           <h2 className={css.sectionTitle}>{section.title}</h2>
 
           <div className={css.lessons}>
-            {section.lessons.map((lesson) => (
-              <Link
-                key={lesson.id}
-                href={`/tutorials/${id}/${lesson.id}`}
-                className={css.lesson}
-              >
+            {section.lessons.map(lesson => (
+              <Link key={lesson.id} href={`/tutorials/${id}/${lesson.id}`} className={css.lesson}>
                 <div className={css.lessonNumber}>Урок {lesson.number}</div>
 
                 <h3 className={css.lessonTitle}>{lesson.title}</h3>
@@ -59,6 +82,6 @@ export default async function TutorialPage({ params }: Props) {
           </div>
         </section>
       ))}
-    </main>
+    </div>
   );
 }
