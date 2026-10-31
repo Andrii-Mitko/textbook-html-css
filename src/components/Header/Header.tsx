@@ -1,7 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
-import css from "./Header.module.css";
-import { tutorials } from "@/data/tutorials";
+import Image from 'next/image';
+import Link from 'next/link';
+import css from './Header.module.css';
+import { tutorials } from '@/data/tutorials';
+import UserMenu from '@/components/UserMenu/UserMenu';
 
 export default function Header() {
   return (
@@ -20,12 +21,14 @@ export default function Header() {
         </Link>
 
         <nav className={css.navigation}>
-          {tutorials.map((tutorial) => (
+          {tutorials.map(tutorial => (
             <Link key={tutorial.id} href={tutorial.href}>
               {tutorial.icon} {tutorial.title}
             </Link>
           ))}
         </nav>
+
+        <UserMenu />
       </div>
     </header>
   );

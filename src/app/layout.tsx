@@ -3,6 +3,7 @@ import './globals.css';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import { zakon } from './fonts';
+import Providers from '@/components/Providers/Providers';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://textbook-html-css.vercel.app'),
@@ -26,11 +27,13 @@ export default function RootLayout({
   return (
     <html lang="uk" data-scroll-behavior="smooth">
       <body className={zakon.variable}>
-        <Header />
+        <Providers>
+          <Header />
 
-        <main className="container">{children}</main>
+          <main className="container">{children}</main>
 
-        <Footer />
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
