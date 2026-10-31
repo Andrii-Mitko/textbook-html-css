@@ -14,6 +14,7 @@ import LessonProgress from '@/components/LessonProgress/LessonProgress';
 import LessonBack from '@/components/LessonActions/LessonBack/LessonBack';
 import LessonTop from '@/components/LessonActions/LessonTop/LessonTop';
 import css from './page.module.css';
+import LessonComplete from '@/components/LessonActions/LessonComplete/LessonComplete';
 
 interface LessonPageProps {
   params: Promise<{
@@ -67,7 +68,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
 
   return (
     <article className={css.page}>
-      <LessonProgress current={current} total={total} />
+      <LessonProgress tutorialId={id} current={current} total={total} />
 
       <LessonBack tutorialId={id} />
 
@@ -79,9 +80,16 @@ export default async function LessonPage({ params }: LessonPageProps) {
         <LessonContent content={currentLesson.content} />
       </div>
 
+      <LessonComplete tutorialId={id} lessonId={lesson} />
+
       <LessonTop />
 
-      <LessonNavigation tutorialId={id} previous={previousLesson} next={nextLesson} />
+      <LessonNavigation
+        tutorialId={id}
+        lessonId={lesson}
+        previous={previousLesson}
+        next={nextLesson}
+      />
     </article>
   );
 }

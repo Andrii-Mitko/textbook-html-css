@@ -3,6 +3,7 @@ import { tutorialsData } from '@/data/tutorialsData';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import css from './page.module.css';
+import LessonStatus from '@/components/LessonStatus/LessonStatus';
 
 type TutorialId = keyof typeof tutorialsData;
 
@@ -72,7 +73,10 @@ export default async function TutorialPage({ params }: Props) {
           <div className={css.lessons}>
             {section.lessons.map(lesson => (
               <Link key={lesson.id} href={`/tutorials/${id}/${lesson.id}`} className={css.lesson}>
-                <div className={css.lessonNumber}>Урок {lesson.number}</div>
+                <div className={css.lessonNumber}>
+                  Урок {lesson.number}
+                  <LessonStatus tutorialId={id} lessonId={lesson.id} />
+                </div>
 
                 <h3 className={css.lessonTitle}>{lesson.title}</h3>
 

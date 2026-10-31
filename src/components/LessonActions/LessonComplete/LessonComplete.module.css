@@ -1,0 +1,33 @@
+.button {
+  width: 100%;
+  margin-top: 24px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #16a34a;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.button:disabled {
+  cursor: default;
+  color: #166534;
+  background-color: #dcfce7;
+}
+
+@media (min-width: 768px) {
+  .button {
+    width: auto;
+  }
+}
